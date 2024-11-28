@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 import { Wrapper as _Wrapper } from "@/styles/components/wrapper";
 import { LazyImage } from "@/components/atoms/lazy-image";
 import { mediaMaxWidth } from "@/utils/media-query";
-import { CheckConfirmed } from "@/components/svgs/check-confirmed";
+import { CheckConfirmed } from "@/components/svgs/customers";
 
 export const TeamContainer = styled.div``;
 

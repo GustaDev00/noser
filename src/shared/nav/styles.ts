@@ -70,9 +70,31 @@ export const Link = styled(_Link)``;
 export const Chat = styled(ButtonSwipe)``;
 
 export const Button = styled.button`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   cursor: pointer;
   position: relative;
   top: 0.5rem;
+`;
+
+export const MenuLine = styled.div`
+  background: #fff;
+  height: 0.4rem;
+  border-radius: 2rem;
+
+  &:first-child {
+    width: 1.55rem;
+    align-self: flex-end;
+  }
+
+  &:nth-child(2) {
+    width: 3.61rem;
+  }
+
+  &:last-child {
+    width: 1.55rem;
+  }
 `;
 
 export const MenuIcon = styled(_Menu)``;

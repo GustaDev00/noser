@@ -35,9 +35,7 @@ export const Footer = () => {
             </S.ListItem>
             <S.ListItem>
               <S.Link href={C.location.link}>
-                <S.Icon>
-                  <S.Pin />
-                </S.Icon>
+                <S.Icon></S.Icon>
                 <S.TextList>
                   {C.location.text}
                   <br />

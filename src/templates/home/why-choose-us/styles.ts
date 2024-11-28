@@ -1,158 +1,116 @@
-import { ButtonSwipe } from "@/components/atoms/button-swipe";
-import { Crown } from "@/components/svgs/crown";
-import { SubtitleLightSmall, TextListItem } from "@/styles/components/subtitle";
-import { TitleBig, TitleListItem, TitleWhiteSmall } from "@/styles/components/titles";
+import { CardWhite } from "@/components/atoms/card-white";
+import { Article } from "@/components/atoms/card-white/styles";
+import { LazyImage } from "@/components/atoms/lazy-image";
 import { Wrapper as _Wrapper } from "@/styles/components/wrapper";
 import { mediaMaxWidth } from "@/utils/media-query";
 import styled from "styled-components";
 
-export const WhyChooseUs = styled.section``;
+export const WhyChooseUs = styled.section`
+  padding-bottom: 10rem;
+`;
 
 export const Wrapper = styled(_Wrapper)`
   flex-direction: column;
-
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: block;
-    width: calc(100% - (16.3rem * 2));
-    height: 0.1rem;
-    background: ${({ theme }) => theme.black015};
-
-    ${mediaMaxWidth("isMobileOrTabletVertical")`
-      width: calc(100% - (4rem * 2));
-    `}
-
-    ${mediaMaxWidth("mobile")`
-      width: calc(100% - (2.2rem * 2))
-    `}
-  }
-
-  &::before {
-    top: 0;
-  }
 `;
+
+export const Content = styled.div``;
 
 export const Title = styled.h2`
-  ${TitleBig}
-`;
-
-export const Subtitle = styled.p`
-  margin-top: 2.7rem;
-
-  ${SubtitleLightSmall}
-`;
-
-export const List = styled.ul`
-  margin: 5.2rem 0;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2.2rem 2.4rem;
-
-  ${mediaMaxWidth("isMobileOrTabletVertical")`
-    grid-template-columns: 1fr;
-  `}
+  color: #1f1f1f;
+  text-align: center;
+  font-family: var(--manrope);
+  font-size: 6.9rem;
+  font-weight: 700;
+  line-height: 9.8rem;
+  letter-spacing: -0.34rem;
 
   ${mediaMaxWidth("mobile")`
-
+    font-size: 4.2rem;
+    line-height: 5.6rem;
+    letter-spacing: -0.2125rem;
   `}
 `;
 
-export const Item = styled.li<{ $bg: string }>`
-  position: relative;
-  background: ${({ theme }) => theme.chineseBlack};
-  border-radius: 1.2rem;
-  padding: 4.8rem;
-  transition: background 1s ease;
-  overflow: hidden;
-
-  &::before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background: ${({ $bg }) => `url(${$bg}) no-repeat`};
-    background-size: cover;
-    z-index: 0;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.4s ease, visibility 0.4s ease;
-  }
-
-  &:hover {
-    &::before {
-      opacity: 0.5;
-      visibility: visible;
-    }
-  }
+export const Description = styled.p`
+  color: #121212;
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 300;
+  line-height: 4.6rem;
+  letter-spacing: -0.0003rem;
+  margin: 3.3rem 0 10.5rem;
 
   ${mediaMaxWidth("mobile")`
-    padding: 4.8rem 2.2rem;
+    font-size: 2.2rem;
+    letter-spacing: -0.0002rem;
+    margin-bottom: 6rem;
   `}
 `;
 
-export const WrapperItem = styled.div`
-  position: relative;
+export const Container = styled.div`
   display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
-  align-items: flex-start;
-  z-index: 2;
-`;
+  gap: 2.6rem;
 
-export const Icon = styled(Crown)`
-  width: 3.6rem;
-  height: 3.6rem;
-`;
-
-export const TitleItem = styled.h3`
-  ${TitleListItem}
-`;
-
-export const TextItem = styled.p`
-  ${TextListItem}
-`;
-
-export const CallToAction = styled.div<{ $bg: string }>`
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  background: url(${({ $bg }) => $bg}) no-repeat;
-  background-position: top;
-  background-size: cover;
-  border-radius: 1.2rem;
-  padding: 6.9rem 9.7rem;
-
-  ${mediaMaxWidth("isMobileOrTabletVertical")`
+  ${mediaMaxWidth("mobile")`
     flex-direction: column;
-    gap: 3.3rem;
   `}
+`;
 
-  ${mediaMaxWidth("mobile")`
-    padding: 10rem 2rem 10rem;
-    overflow: hidden;
-  `}
+export const Img = styled.div`
+  position: relative;
 `;
 
 export const Text = styled.p`
-  ${TitleWhiteSmall}
+  position: absolute;
+  left: 3.8rem;
+  bottom: 2.8rem;
+  color: #fff;
+  font-family: var(--manrope);
+  font-size: 6.8rem;
+  font-weight: 200;
+  line-height: 10.7rem;
+  letter-spacing: -0.3441rem;
 
-  ${mediaMaxWidth("isMobileOrTabletVertical")`
-    align-self: flex-start;
+  b {
+    font-weight: 400;
+  }
+
+  ${mediaMaxWidth("mobile")`
+    font-size: 4.2rem;
+    letter-spacing: -0.2125rem;
   `}
 `;
 
-export const Button = styled(ButtonSwipe)`
+export const Imagem = styled(LazyImage)`
+  width: 60.5rem;
+  height: 57.2rem;
+  object-fit: cover;
+  border-radius: 0.8rem;
+
   ${mediaMaxWidth("mobile")`
-    position: relative;
-    font-size: 2rem;
-    padding: 1.5rem 3rem;
+    width: 100%;
   `}
+`;
+
+export const List = styled.ul`
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.8rem 1.7rem;
+
+  ${mediaMaxWidth("mobile")`
+    grid-template-columns: 1fr;
+  `}
+`;
+
+export const Item = styled.li``;
+
+export const Card = styled(CardWhite)`
+  ${Article} {
+    ${mediaMaxWidth("mobile")`
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.8rem;
+    `}
+  }
 `;

@@ -6,31 +6,24 @@ import { mediaMaxWidth } from "@/utils/media-query";
 
 export const Header = styled.section`
   position: relative;
-  height: 100vh;
-
-  @supports (-webkit-touch-callout: none) {
-    height: 100svh;
-  }
 `;
 
 export const Wrapper = styled(_Wrapper)`
   flex-direction: column;
   height: 100%;
-  padding-top: 20rem;
-  padding-bottom: 12rem;
+  padding: 20rem 12rem 12rem;
   align-items: center;
   gap: 8rem;
 
   ${mediaMaxWidth("isMobileOrTabletVertical")`
     flex-direction: column;
     gap: 10rem;
-    padding-top: 24rem;
+    padding: 24rem 2rem 12rem;
   `}
 
   ${mediaMaxWidth("mobile")`
     gap: 6.2rem;
-    padding-top: 12rem;
-    padding-bottom: 4rem;
+    padding: 12rem 1.2rem;
   `}
 `;
 
@@ -49,7 +42,7 @@ export const Background = styled(LazyImage)`
   object-fit: cover;
 
   ${mediaMaxWidth("mobile")`
-    object-position: -80rem -10rem;
+    object-position: -140rem 0rem;
   `}
 `;
 
@@ -66,12 +59,28 @@ export const Title = styled.h1`
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  ${mediaMaxWidth("isMobileOrTabletVertical")`
+    font-size: 11rem;
+  `}
+
+  ${mediaMaxWidth("mobile")`
+    flex-direction: column;
+    gap: 1.2rem;
+    font-size: 6.8rem;
+    line-height: 8.7rem;
+    letter-spacing: -0.34rem;
+  `}
 `;
 
 export const Line = styled.div`
   background: #fff;
   width: 16.6rem;
   height: 0.4rem;
+
+  ${mediaMaxWidth("isMobileOrTabletVertical")`
+    width: 10rem;
+  `}
 `;
 
 export const Subtitle = styled.p`
@@ -89,6 +98,18 @@ export const Divider = styled.div`
   width: 150.8rem;
   padding-top: 0.1rem;
   background: rgba(255, 255, 255, 0.3);
+
+  ${mediaMaxWidth("isMobileOrTabletVertical")`
+    width: 90%;
+  `}
 `;
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  display: flex;
+  gap: 3.2rem;
+
+  ${mediaMaxWidth("mobile")`
+    flex-direction: column;
+    gap: 1.8rem;
+  `}
+`;

@@ -4,15 +4,15 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   display: flex;
   position: relative;
-  padding: 9.2rem 12rem;
+  padding: 18.1rem 14.1rem;
   z-index: 2;
 
   ${mediaMaxWidth("isMobileOrTabletVertical")`
-    padding: 3.5rem 4rem;
+    padding: 10rem 4rem;
     flex-direction: column;
   `}
 
   ${mediaMaxWidth("mobile")`
-    padding: 3.6rem 2.2rem;
+    padding: 6rem 1.4rem;
   `}
 `;

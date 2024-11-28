@@ -1,5 +1,6 @@
 import { LazyImage } from "@/components/atoms/lazy-image";
 import { ArrowIcon } from "@/components/svgs/arrow";
+import { mediaMaxWidth } from "@/utils/media-query";
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
@@ -7,6 +8,14 @@ export const Wrapper = styled.div`
   align-items: center;
   gap: 3.9rem;
   padding: 2.6rem 3.6rem;
+
+  ${mediaMaxWidth("isMobileOrTabletVertical")`
+    padding: 2.6rem 2.2rem;
+
+    picture {
+      display: none;
+    }
+  `}
 `;
 
 export const Content = styled.div`
@@ -15,7 +24,11 @@ export const Content = styled.div`
   gap: 1.4rem;
 `;
 
-export const img = styled(LazyImage)``;
+export const img = styled(LazyImage)`
+  width: 100%;
+  height: 21.8rem;
+  object-fit: contain;
+`;
 
 export const Title = styled.h3`
   color: #fff;

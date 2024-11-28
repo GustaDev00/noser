@@ -10,10 +10,10 @@ const swipeStyles = css`
   cursor: pointer;
   padding: 1.5rem 3rem;
   color: #242424;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 500;
   line-height: 3.1rem;
-  letter-spacing: -0.002px;
+  letter-spacing: -0.0002rem;
   border-radius: 6.7rem;
   border: 0.1rem solid rgba(255, 255, 255, 0.4);
   background: #fff;

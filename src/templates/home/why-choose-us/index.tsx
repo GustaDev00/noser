@@ -1,30 +1,32 @@
 import * as S from "./styles";
-import C from "@/constants";
+import C from "./constants";
+import { CustomBr } from "@/components/atoms/custom-br";
 
 export default () => {
   return (
     <S.WhyChooseUs>
       <S.Wrapper>
-        <S.Title>{C.whyChooseUs.title}</S.Title>
-        <S.Subtitle>{C.whyChooseUs.description}</S.Subtitle>
-        <S.List>
-          {C.whyChooseUs.list.map(({ title, text, bg }, index) => (
-            <S.Item key={index} $bg={bg}>
-              <S.WrapperItem>
-                <S.Icon />
-                <S.TitleItem>{title}</S.TitleItem>
-                <S.TextItem>{text}</S.TextItem>
-              </S.WrapperItem>
-            </S.Item>
-          ))}
-        </S.List>
-
-        <S.CallToAction $bg={C.whyChooseUs.callAction.img.src}>
-          <S.Text>{C.whyChooseUs.callAction.text}</S.Text>
-          <S.Button {...C.whyChooseUs.callAction.button}>
-            {C.whyChooseUs.callAction.button.title}
-          </S.Button>
-        </S.CallToAction>
+        <S.Content>
+          <S.Title>Verlässlichkeit, die den Unterschied macht</S.Title>
+          <S.Description>
+            Verlässlichkeit, Kompetenz und Engagement – gemeinsam sorgen wir für eine starke
+            <CustomBr byViewport="desktop" />
+            finanzielle Basis und eine erfolgreiche Zukunft.
+          </S.Description>
+        </S.Content>
+        <S.Container>
+          <S.Img>
+            <S.Text>{C.image.text}</S.Text>
+            <S.Imagem {...C.image.img} />
+          </S.Img>
+          <S.List>
+            {C.cards.map((card, index) => (
+              <S.Item key={index}>
+                <S.Card {...card} />
+              </S.Item>
+            ))}
+          </S.List>
+        </S.Container>
       </S.Wrapper>
     </S.WhyChooseUs>
   );

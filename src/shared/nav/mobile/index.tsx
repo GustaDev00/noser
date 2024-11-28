@@ -17,7 +17,9 @@ export default () => {
         <S.Logo />
 
         <S.Button onClick={handleClick}>
-          <S.MenuIcon />
+          <S.MenuLine />
+          <S.MenuLine />
+          <S.MenuLine />
         </S.Button>
       </S.Header>
 

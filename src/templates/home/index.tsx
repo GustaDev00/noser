@@ -2,19 +2,21 @@
 
 import { type FC } from "react";
 import Header from "./header";
-import Services from "./services";
+import Partner from "./partner";
 import AboutUs from "./about-us";
+import Benefits from "./benefits";
+import Downloads from "./downloads";
 import WhyChooseUs from "./why-choose-us";
-import Contact from "@/shared/contact";
 
 export const HomeTemplate: FC = () => {
   return (
     <>
       <Header />
-      {/* <Services />
+      <Partner />
       <AboutUs />
+      <Benefits />
+      <Downloads />
       <WhyChooseUs />
-      <Contact /> */}
     </>
   );
 };

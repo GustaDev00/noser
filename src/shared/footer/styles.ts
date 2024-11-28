@@ -4,7 +4,6 @@ import { Wrapper as _Wrapper } from "@/styles/components/wrapper";
 import { mediaMaxWidth } from "@/utils/media-query";
 import { Mail as _Mail } from "@/components/svgs/mail";
 import { Phone as _Phone } from "@/components/svgs/phone";
-import { Pin as _Pin } from "@/components/svgs/pin";
 import { TitleSmall } from "@/styles/components/titles";
 import { SubtitleDark } from "@/styles/components/subtitle";
 import _Link from "next/link";
@@ -107,11 +106,6 @@ export const Mail = styled(_Mail)`
 export const Phone = styled(_Phone)`
   width: 2rem;
   height: 2rem;
-`;
-
-export const Pin = styled(_Pin)`
-  width: 1.6rem;
-  height: 2.3rem;
 `;
 
 export const Line02 = styled.div`

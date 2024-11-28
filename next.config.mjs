@@ -2,7 +2,7 @@ import TerserPlugin from "terser-webpack-plugin";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  reactStrictMode: false,
   compiler: {
     styledComponents: true,
   },

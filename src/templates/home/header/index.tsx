@@ -1,6 +1,5 @@
 import { CustomBr } from "@/components/atoms/custom-br";
 import * as S from "./styles";
-import C from "@/constants";
 import { Card } from "@/components/molecules/card";
 
 export default () => {
@@ -24,6 +23,8 @@ export default () => {
         <S.Divider />
         <S.Container>
           <Card type="peoples" />
+          <Card type="clients" />
+          <Card type="quality" />
         </S.Container>
       </S.Wrapper>
     </S.Header>
