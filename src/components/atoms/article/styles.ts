@@ -25,6 +25,12 @@ export const Container = styled.div`
     width: 81.6rem;
     height: 80.2rem;
     object-fit: cover;
+
+    ${mediaMaxWidth("mobile")`
+      width: 100%;
+      height: 57.8rem;
+      border-radius: 1.2rem;
+    `}
   }
 `;
 

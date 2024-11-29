@@ -303,6 +303,54 @@ export default {
         content: [<>Qualität</>, <>Präzision</>],
       },
     },
+    accounting: {
+      list: [
+        {
+          title: "Buchhaltung",
+          content: (
+            <>
+              Mit präziser und durchdachter Buchhaltung legen wir die Grundlage für Ihre klaren
+              Entscheidungen. Von der täglichen Finanzübersicht bis zum umfassenden Jahresabschluss
+              – wir sorgen dafür, dass jede Zahl in Ihrem Unternehmen stimmt. Unser Ziel ist es,
+              Ihre Buchhaltung als strategischen Vorteil zu gestalten, der Transparenz und
+              Gelassenheit schafft. Durch die Kombination aus digitalem Know-how und menschlicher
+              Expertise machen wir Finanzprozesse klar und leicht nachvollziehbar, sodass Sie mit
+              Ruhe und Fokus auf das Wachstum Ihres Unternehmens blicken können.
+            </>
+          ),
+        },
+        {
+          title: "Steuerberatung",
+          content: (
+            <>
+              Wir wissen, dass Steuerfragen oft mit Unsicherheiten verbunden sind. Unsere Experten
+              analysieren Ihre Finanzen und finden Wege, Ihre Steuerlast zu optimieren –
+              fristgerecht und ohne Stress. Ob Steuerplanung oder Steuererklärung, wir erledigen
+              alles im Hintergrund, damit Sie sich sicher fühlen und auf Ihre Finanzen vertrauen
+              können. Mit uns haben Sie einen Steuerberater an Ihrer Seite, der stets auf dem
+              neuesten Stand ist und Ihre Interessen aktiv vertritt.
+            </>
+          ),
+        },
+        {
+          title: "Nachfolgeregelungen und Erbschaftsplanung",
+          content: (
+            <>
+              Die Planung für die nächste Generation braucht Fingerspitzengefühl und Vertrauen. Wir
+              sind da, um sicherzustellen, dass Ihr Lebenswerk und Ihre Werte in die richtigen Hände
+              übergehen – genau so, wie Sie es sich vorstellen. Schritt für Schritt begleiten wir
+              Sie durch diesen Prozess und sind Ihr Ansprechpartner für jede Frage, damit Sie
+              beruhigt in die Zukunft blicken können. Mit uns haben Sie jemanden, der Ihre Anliegen
+              ernst nimmt und für eine reibungslose und persönliche Übergabe sorgt.
+            </>
+          ),
+        },
+      ],
+      img: {
+        src: "/imgs/privatkunden/accounting/img.png",
+        alt: "Accounting",
+      },
+    },
     content: {
       img: [
         {
@@ -326,6 +374,70 @@ export default {
           </p>
         </>
       ),
+    },
+    advantages: {
+      bg: {
+        src: "/imgs/privatkunden/advantages/bg.png",
+        alt: "Background",
+      },
+      title: <>Unsere Vorteile</>,
+      list: [
+        {
+          title: (
+            <>
+              Kein Zahlenstress, sondern
+              <CustomBr byViewport="desktop" /> klare Struktur
+            </>
+          ),
+          text: (
+            <>
+              Wir übernehmen alle finanziellen
+              <CustomBr byViewport="desktop" /> Aufgaben – von der Steuererklärung bis
+              <CustomBr byViewport="desktop" /> zur Nachlassplanung. Während wir den
+              <CustomBr byViewport="desktop" /> Weg freimachen, gewinnen Sie wertvolle
+              <CustomBr byViewport="desktop" /> Zeit und Ruhe, um sich auf das
+              <CustomBr byViewport="desktop" /> Wesentliche zu konzentrieren.
+            </>
+          ),
+        },
+        {
+          title: (
+            <>
+              Volle Transparenz für Ihre
+              <CustomBr byViewport="desktop" /> Sicherheit
+            </>
+          ),
+          text: (
+            <>
+              Wir verwandeln komplexe Finanzfragen in
+              <CustomBr byViewport="desktop" /> klare und leicht verständliche Lösungen,
+              <CustomBr byViewport="desktop" /> damit Sie Ihre Finanzen mühelos im Griff
+              <CustomBr byViewport="desktop" /> behalten. Verständliche Kommunikation
+              <CustomBr byViewport="desktop" /> und absolute Transparenz sind unsere
+              <CustomBr byViewport="desktop" /> Garantie.
+            </>
+          ),
+        },
+        {
+          title: (
+            <>
+              Zuverlässigkeit, die Sie
+              <CustomBr byViewport="desktop" /> spüren
+            </>
+          ),
+          text: (
+            <>
+              Vom ersten Kontakt an bis zur langfristigen
+              <CustomBr byViewport="desktop" /> Betreuung gestalten wir unsere
+              <CustomBr byViewport="desktop" /> Zusammenarbeit transparent und
+              <CustomBr byViewport="desktop" /> vertrauensvoll. Ihre Anliegen sind nicht nur
+              <CustomBr byViewport="desktop" /> in sicheren Händen – sie sind bei
+              <CustomBr byViewport="desktop" /> Menschen, denen Ihre Ziele wirklich am
+              <CustomBr byViewport="desktop" /> Herzen liegen.
+            </>
+          ),
+        },
+      ],
     },
   },
   content: [

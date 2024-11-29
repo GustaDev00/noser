@@ -2,14 +2,7 @@ import * as S from "./styles";
 import { HeaderProps } from "./props";
 import useAnimation from "./animations";
 
-export const Header = ({
-  title,
-  description,
-  modal,
-  background,
-  breadcrumb,
-  tags,
-}: HeaderProps) => {
+export const Header = ({ title, description, modal, background, tags }: HeaderProps) => {
   const { headerRef } = useAnimation();
 
   return (

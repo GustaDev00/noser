@@ -11,5 +11,4 @@ export interface HeaderProps {
     src: string;
     alt: string;
   };
-  breadcrumb: string;
 }

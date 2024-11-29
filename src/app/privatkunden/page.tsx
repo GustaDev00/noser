@@ -7,8 +7,8 @@ export const metadata: Metadata = {
   description: "Privatkunden",
 };
 
-const Dienstleistungen = (): ReactNode => {
+const Privatkunden = (): ReactNode => {
   return <PrivatkundenTemplate />;
 };
 
-export default Dienstleistungen;
+export default Privatkunden;
