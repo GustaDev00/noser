@@ -7,200 +7,167 @@ import { Phone as _Phone } from "@/components/svgs/phone";
 import { TitleSmall } from "@/styles/components/titles";
 import { SubtitleDark } from "@/styles/components/subtitle";
 import _Link from "next/link";
+import { ButtonSwipe } from "@/components/atoms/button-swipe";
+import { ArrowUpIcon } from "@/components/svgs/arrow-up";
 
-export const Footer = styled.footer`
-  background: ${({ theme }) => theme.eerieBlackHalf};
-`;
-
-export const Wrapper = styled(_Wrapper)`
-  flex-direction: column;
-  gap: 8rem;
-
-  ${mediaMaxWidth("mobile")`
-    gap: 4rem;
-  `}
-`;
-
-export const Line01 = styled.div`
-  border-radius: 6.4rem;
-  background: ${({ theme }) => theme.white};
-  width: 100%;
-  padding: 4.2rem 14.2rem;
-  display: flex;
-  justify-content: space-between;
-
-  ${mediaMaxWidth("isMobileOrTabletVertical")`
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 4rem;
-  `}
-
-  ${mediaMaxWidth("mobile")`
-    padding: 4.2rem 2.4rem;
-    border-radius: 2.4rem;
-  `}
-`;
-
-export const List = styled.ul`
-  display: flex;
-  align-items: center;
-  gap: 5.5rem;
-
-  ${mediaMaxWidth("isMobileOrTabletVertical")`
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 4rem;
-  `}
-`;
-
-export const ListItem = styled.li``;
-
-export const Link = styled.a`
-  display: flex;
-  align-items: center;
-  gap: 2.5rem;
-`;
-
-export const TextList = styled.p`
-  color: ${({ theme }) => theme.romanSilver};
-  font-size: 1.3rem;
-  font-weight: 400;
-  line-height: 150%;
-  letter-spacing: -0.0001rem;
-
-  span {
-    margin-top: 1rem;
-    color: ${({ theme }) => theme.outerSpace};
-    font-size: 2rem;
-    font-weight: 400;
-    line-height: 150%;
-    letter-spacing: -0.0002rem;
-  }
-
-  ${mediaMaxWidth("mobile")`
-    width: 62%;
-  `}
-`;
-
-export const Icon = styled.div`
-  width: 5.9rem;
-  height: 5.9rem;
-  border: 0.1rem solid ${({ theme }) => theme.rosewood015};
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  svg path {
-    fill: ${({ theme }) => theme.rosewood};
-  }
-`;
-
-export const Mail = styled(_Mail)`
-  width: 2.4rem;
-  height: 1.4rem;
-`;
-
-export const Phone = styled(_Phone)`
-  width: 2rem;
-  height: 2rem;
-`;
-
-export const Line02 = styled.div`
+export const Cta = styled.div`
   position: relative;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 10rem;
+  overflow: hidden;
 
-  padding: 8rem 0;
-
-  &::before,
-  &::after {
+  &::before {
     content: "";
     display: block;
     position: absolute;
     top: 0;
-    width: 100%;
-    height: 0.1rem;
-    background: ${({ theme }) => theme.white02};
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background: url("./imgs/footer/bg.png") repeat-x;
+    background-size: cover;
+    animation: moveBackground 120s linear infinite;
+
+    ${mediaMaxWidth("mobile")`
+      animation-duration: 30s;
+    `}
   }
 
-  &::after {
-    top: auto;
-    bottom: 0;
+  @keyframes moveBackground {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
   }
+`;
+
+export const WrapperCta = styled(_Wrapper)`
+  gap: 12rem;
+  justify-content: center;
+  align-items: center;
 
   ${mediaMaxWidth("mobile")`
-    padding: 4rem 0;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
-    gap: 4rem;
+    padding: 8rem 3.2rem;
+    gap: 2.4rem;
   `}
 `;
 
-export const Column = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
+export const TitleCta = styled.h2`
+  color: #000;
+  font-family: var(--manrope);
+  font-size: 4.6rem;
+  font-weight: 700;
 
   ${mediaMaxWidth("mobile")`
-    gap: 1.6rem;
+    font-size: 4.2rem;
   `}
 `;
 
-export const Title02 = styled.h2`
-  ${TitleSmall}
+export const SubtitleCta = styled.p`
+  color: #444;
+  font-family: var(--manrope);
+  font-size: 2.6rem;
+  font-weight: 400;
+  line-height: 150%;
 
-  color: ${({ theme }) => theme.white};
+  ${mediaMaxWidth("mobile")`
+    font-size: 2.2rem;
+  `}
 `;
 
-export const Subtitle02 = styled.p`
-  ${SubtitleDark}
+export const ButtonCta = styled(ButtonSwipe)`
+  background: #0d4d9b;
+  color: #fff;
+  padding: 1.5rem 4rem;
+
+  svg path {
+    fill: #fff;
+  }
 `;
 
-export const Lines = styled.div`
-  display: flex;
-  gap: 0.4rem;
+export const ButtonUp = styled.button`
+  top: -4.2rem;
+  right: 8.5rem;
+  position: absolute;
+  width: 8.4rem;
+  height: 8.4rem;
+  border: 0.3rem solid #0d4d9b;
+  background: #fff;
+  border-radius: 50%;
+  z-index: 20;
+
+  ${mediaMaxWidth("mobile")`
+    width: 6.4rem;
+    height: 6.4rem;
+    right: 3rem;
+    top: 80%;
+  `}
 `;
 
-const Line = styled.div`
-  width: 2.1rem;
-  height: 0.1rem;
-  background: ${({ theme }) => theme.white};
-  border-radius: 0.4rem;
+export const ArrowUp = styled(ArrowUpIcon)``;
+
+export const Footer = styled.footer`
+  position: relative;
 `;
 
-export const LineSmall = styled(Line)``;
+export const Wrapper = styled(_Wrapper)`
+  background: #0d4d9b;
+  padding: 8rem 12rem;
+  gap: 12rem;
+  align-items: center;
 
-export const LineBig = styled(Line)`
-  width: 3.7rem;
+  ${mediaMaxWidth("mobile")`
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6.4rem;
+    padding: 8rem 2.2rem;
+  `}
 `;
 
-export const ColumnList = styled.div`
-  width: 25rem;
+export const Column = styled.div<{ $first?: boolean }>`
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 3.4rem;
+  margin-right: ${({ $first }) => ($first ? "16.1rem" : "0")};
+
+  ${mediaMaxWidth("mobile")`
+    margin-right: 0;
+  `}
 `;
 
-export const List02 = styled.ul`
-  ${SubtitleDark}
+export const Line = styled.div``;
 
+export const TitleLine = styled.h3`
+  color: #fff;
+  font-family: var(--manrope);
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+`;
+
+export const List = styled.ul`
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.6rem;
 `;
 
-export const ListItem02 = styled.li``;
+export const Item = styled.li`
+  color: #ccc;
+  font-family: var(--manrope);
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+`;
 
-export const Link02 = styled(_Link)``;
+export const Link = styled.a`
+  font-size: inherit;
+`;
 
 export const Info = styled.div`
-  padding-bottom: 4rem;
+  background: #063773;
+  padding: 3.8rem 12rem;
   display: flex;
   justify-content: space-between;
   color: ${({ theme }) => theme.white};
@@ -209,11 +176,23 @@ export const Info = styled.div`
   line-height: 140%;
 
   ${mediaMaxWidth("mobile")`
+    padding: 3.8rem 2.2rem;
     flex-direction: column;
     align-items: flex-start;
     font-size: 1.6rem;
     gap: 1.7rem;
   `}
+`;
+
+export const SocialShare = styled.div`
+  display: flex;
+  gap: 2.4rem;
+
+  svg {
+    width: 2.4rem;
+    height: 2.4rem;
+    fill: #fff;
+  }
 `;
 
 export const Copy = styled.p``;

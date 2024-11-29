@@ -1,83 +1,90 @@
+import { CustomBr } from "@/components/atoms/custom-br";
 import * as S from "./styles";
 import C from "@/constants";
+import { useCallback } from "react";
 
 export const Footer = () => {
+  const handleClickUpPage = useCallback(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <S.Footer>
-      <S.Wrapper>
-        <S.Line01>
-          <S.Logo />
+    <>
+      <S.Cta>
+        <S.WrapperCta>
+          <S.TitleCta>
+            Mehr Klarheit
+            <CustomBr byViewport="mobile" /> und Ruhe
+            <CustomBr byViewport="desktop" /> für
+            <CustomBr byViewport="mobile" /> Ihre Finanzen
+          </S.TitleCta>
+          <S.SubtitleCta>
+            wir sind für Sie da.
+            <br /> Sprechen wir darüber, wie wir
+            <CustomBr byViewport="mobile" /> Ihre Ziele
+            <CustomBr byViewport="desktop" /> realisieren.
+          </S.SubtitleCta>
+          <S.ButtonCta href="/kontakt">Gespräch starten</S.ButtonCta>
+        </S.WrapperCta>
+      </S.Cta>
+      <S.Footer>
+        <S.ButtonUp onClick={handleClickUpPage}>
+          <S.ArrowUp />
+        </S.ButtonUp>
+        <S.Wrapper>
+          <S.Column $first={true}>
+            <S.Logo />
+            <S.Line>
+              <S.List>
+                <S.Item>
+                  <S.Link href={C.phone.link} target="_blank">
+                    {C.phone.footer}: {C.phone.number}
+                  </S.Link>
+                </S.Item>
 
-          <S.List>
-            <S.ListItem>
-              <S.Link href={C.phone.link}>
-                <S.Icon>
-                  <S.Phone />
-                </S.Icon>
-                <S.TextList>
-                  {C.phone.text}
-                  <br />
-                  <span>{C.phone.number}</span>
-                </S.TextList>
-              </S.Link>
-            </S.ListItem>
-            <S.ListItem>
-              <S.Link href={C.mail.link}>
-                <S.Icon>
-                  <S.Mail />
-                </S.Icon>
-                <S.TextList>
-                  {C.mail.text}
-                  <br />
-                  <span>{C.mail.email}</span>
-                </S.TextList>
-              </S.Link>
-            </S.ListItem>
-            <S.ListItem>
-              <S.Link href={C.location.link}>
-                <S.Icon></S.Icon>
-                <S.TextList>
-                  {C.location.text}
-                  <br />
-                  <span>{C.location.address}</span>
-                </S.TextList>
-              </S.Link>
-            </S.ListItem>
-          </S.List>
-        </S.Line01>
+                <S.Item>
+                  <S.Link href={C.mail.link} target="_blank">
+                    {C.mail.footer}: {C.mail.email}
+                  </S.Link>
+                </S.Item>
 
-        <S.Line02>
-          <S.Column>
-            <S.Title02>{C.footer.title}</S.Title02>
-            <S.Subtitle02>{C.footer.description}</S.Subtitle02>
-          </S.Column>
+                <S.Item>{C.text}</S.Item>
+              </S.List>
+            </S.Line>
 
-          <S.ColumnList>
-            <S.Title02>{C.footer.categoriesText}</S.Title02>
-            <S.List02>
-              {C.categories.map((category, index) => (
-                <S.ListItem02 key={index}>
-                  <S.Link02 {...category}>{category.title}</S.Link02>
-                </S.ListItem02>
+            <S.SocialShare>
+              {C.footer.share.map(({ href, icon: Icon, title }, index) => (
+                <S.Link href={href} title={title} key={title}>
+                  <Icon />
+                </S.Link>
               ))}
-            </S.List02>
-          </S.ColumnList>
-
-          <S.Column>
-            <S.Title02>{C.footer.servicesText}</S.Title02>
-            <S.List02>
-              {C.footer.categories.map((title, index) => (
-                <S.ListItem02 key={index}>{title}</S.ListItem02>
-              ))}
-            </S.List02>
+            </S.SocialShare>
           </S.Column>
-        </S.Line02>
+          <S.Column>
+            <S.TitleLine>{C.footer.categoriesText}</S.TitleLine>
+            <S.List>
+              {C.categories.map((link) => (
+                <S.Item key={link.title}>
+                  <S.Link {...link}>{link.title}</S.Link>
+                </S.Item>
+              ))}
+            </S.List>
+          </S.Column>
+          <S.Column>
+            <S.TitleLine>{C.footer.time.text}</S.TitleLine>
 
+            <S.List>
+              {C.footer.time.days.map((text) => (
+                <S.Item>{text}</S.Item>
+              ))}
+            </S.List>
+          </S.Column>
+        </S.Wrapper>
         <S.Info>
           <S.Copy>{C.footer.copyrigth.text}</S.Copy>
           <S.Agency>{C.footer.copyrigth.fiber}</S.Agency>
         </S.Info>
-      </S.Wrapper>
-    </S.Footer>
+      </S.Footer>
+    </>
   );
 };

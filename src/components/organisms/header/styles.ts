@@ -4,8 +4,8 @@ import { Wrapper as _Wrapper } from "@/styles/components/wrapper";
 import { mediaMaxWidth } from "@/utils/media-query";
 import { TitleWhite } from "@/styles/components/titles";
 import { SubtitleLight } from "@/styles/components/subtitle";
-import { Check } from "@/components/svgs/check";
 import _Link from "next/link";
+import { ArrowLongDownIcon } from "@/components/svgs/arrow-long-down";
 
 export const Header = styled.div<{ $modal?: boolean; $tags?: boolean }>`
   position: relative;
@@ -18,14 +18,14 @@ export const Header = styled.div<{ $modal?: boolean; $tags?: boolean }>`
 `;
 
 export const Wrapper = styled(_Wrapper)`
-  padding-top: 24rem;
-  padding-bottom: 10rem;
+  padding-top: 25rem;
+  padding-bottom: 21rem;
   align-items: center;
   justify-content: center;
 
   ${mediaMaxWidth("mobile")`
-    padding-top: 13rem;
-    padding-bottom: 5rem;
+    padding-top: 16rem;
+    padding-bottom: 13rem;
   `}
 `;
 
@@ -38,50 +38,40 @@ export const Content = styled.div`
   gap: 3.4rem;
 
   ${mediaMaxWidth("mobile")`
-    gap: 2rem;
+    gap: 4.2rem;
   `}
 `;
 
-export const Breadcrumb = styled.ul`
-  width: fit-content;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 1.2rem;
-
-  &::before {
-    content: "";
-    display: block;
-    border-left: 0.6rem solid transparent;
-    border-right: 0.6rem solid transparent;
-    border-bottom: 0.9rem solid ${({ theme }) => theme.carnelian};
-    transform: rotate(90deg);
-  }
-`;
-
-export const Item = styled.li`
-  color: ${({ theme }) => theme.gainsboro};
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 140%;
-
-  &:first-child {
-    order: -1;
-  }
-`;
-
-export const Link = styled(_Link)`
-  cursor: pointer;
-  text-decoration: underline;
-`;
-
 export const Title = styled.h1`
-  ${TitleWhite}
+  text-align: center;
+  font-family: var(--manrope);
+  font-size: 8.2rem;
+  font-weight: 700;
+  line-height: 9.2rem;
+  letter-spacing: -0.4149rem;
+  background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0.3) 60%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  ${mediaMaxWidth("mobile")`
+    font-size: 5.8rem;
+    font-weight: 700;
+    line-height: 8.2rem;
+    letter-spacing: -0.2935rem;    
+  `}
 `;
 
 export const Description = styled.p`
-  ${SubtitleLight}
+  color: #fff;
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 4.2rem;
+  letter-spacing: -0.0002rem;
 `;
+
+export const ArrowDown = styled(ArrowLongDownIcon)``;
 
 export const Background = styled(LazyImage)`
   position: absolute;
@@ -164,9 +154,4 @@ export const Tag = styled.div`
   font-weight: 600;
   line-height: 3.1rem;
   letter-spacing: -0.0003rem;
-`;
-
-export const CheckIcon = styled(Check)`
-  width: 3.5rem;
-  height: 3.5rem;
 `;

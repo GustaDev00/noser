@@ -26,17 +26,10 @@ export default () => {
               title={<>Privatkunden</>}
               description={
                 <>
-                  Für Privatpersonen bieten wir
-                  <CustomBr byViewport="mobile" /> umfassende
-                  <CustomBr byViewport="desktop" /> Unterstützung bei
-                  <CustomBr byViewport="mobile" /> steuerlichen und finanziellen Fragen.
-                  <br /> Ob Steuererklärung oder
-                  <CustomBr byViewport="mobile" /> Nachlassplanung – wir
-                  <CustomBr byViewport="desktop" /> machen es
-                  <CustomBr byViewport="mobile" /> einfach, damit Sie sich auf die
-                  <CustomBr byViewport="mobile" /> wichtigen
-                  <CustomBr byViewport="desktop" /> Dinge im Leben
-                  <CustomBr byViewport="mobile" /> konzentrieren können.
+                  Für Privatpersonen bieten wir Unterstützung in steuerlichen und finanziellen
+                  Fragen: Steuererklärungen, Steuerberatung, Budget- und Finanzplanung,
+                  Nachlassplanung, Willensvollstreckung und Vertragserstellung – alles, damit Sie
+                  sich entspannt auf die wichtigen Dinge im Leben konzentrieren können.
                 </>
               }
               link={{
@@ -49,18 +42,10 @@ export default () => {
               title={<>Unternehmen</>}
               description={
                 <>
-                  Für Unternehmen bieten wir
-                  <CustomBr byViewport="mobile" /> umfassende
-                  <CustomBr byViewport="desktop" /> Unterstützung in den
-                  <CustomBr byViewport="mobile" /> Bereichen Buchhaltung,
-                  <br /> Lohnadministration,
-                  <CustomBr byViewport="mobile" /> Steuerberatung, Firmengründung
-                  <br /> und Treuhandmandate. Ihr Geschäft
-                  <CustomBr byViewport="mobile" /> wächst – wir
-                  <CustomBr byViewport="desktop" /> kümmern uns um die
-                  <CustomBr byViewport="mobile" /> Details, damit Sie sich auf Ihre
-                  <CustomBr byViewport="desktop" /> Ideen
-                  <CustomBr byViewport="mobile" /> und Ihr Team konzentrieren können.
+                  Für Unternehmen bieten wir umfassende Unterstützung in den Bereichen Buchhaltung,
+                  Lohnadministration, Steuerberatung, Firmengründung und Treuhandmandate. Ihr
+                  Geschäft wächst – wir kümmern uns um die Details, damit Sie sich auf Ihre Ideen
+                  und Ihr Team konzentrieren können.
                 </>
               }
               link={{

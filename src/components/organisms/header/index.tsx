@@ -17,31 +17,10 @@ export const Header = ({
       <S.Background {...background} />
       <S.Wrapper>
         <S.Content>
-          <S.Breadcrumb data-timeline="breadcrumb">
-            <S.Item>
-              <S.Link href="/">Home</S.Link>
-            </S.Item>
-            <S.Item>{breadcrumb}</S.Item>
-          </S.Breadcrumb>
           <S.Title>{title}</S.Title>
           {description && <S.Description id="descriptionHeader">{description}</S.Description>}
+          <S.ArrowDown />
         </S.Content>
-
-        {modal?.content && (
-          <S.Container data-timeline="modal">
-            <S.Text>{modal.content}</S.Text>
-          </S.Container>
-        )}
-
-        {tags && (
-          <S.Tags>
-            {tags.content.map((tag, index) => (
-              <S.Tag key={index}>
-                {tag} <S.CheckIcon />
-              </S.Tag>
-            ))}
-          </S.Tags>
-        )}
       </S.Wrapper>
     </S.Header>
   );

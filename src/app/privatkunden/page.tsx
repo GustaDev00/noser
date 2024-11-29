@@ -1,14 +1,14 @@
-import { DienstleistungenTemplate } from "@/templates/dienstleistungen";
+import { PrivatkundenTemplate } from "@/templates/privatkunden";
 import { type Metadata } from "next";
 import { type ReactNode } from "react";
 
 export const metadata: Metadata = {
-  title: "Dienstleistungen",
-  description: "Dienstleistungen",
+  title: "Privatkunden",
+  description: "Privatkunden",
 };
 
 const Dienstleistungen = (): ReactNode => {
-  return <DienstleistungenTemplate />;
+  return <PrivatkundenTemplate />;
 };
 
 export default Dienstleistungen;

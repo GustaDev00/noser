@@ -1,9 +1,14 @@
 import { CustomBr } from "@/components/atoms/custom-br";
+import { FaFacebookF } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 export default {
   phone: {
     text: "Nummer",
-    number: "076 397 27 06",
+    footer: "Phone",
+    number: "055 648 07 60",
     link: "tel:+41763972706",
   },
   buttons: {
@@ -12,9 +17,16 @@ export default {
   help: "Wie können wir helfen?",
   mail: {
     text: "Schreibe uns ein E-mail",
+    footer: "Email",
     email: "info@andrade-gipser.ch",
     link: "mailto:info@andrade-gipser.ch",
   },
+  text: (
+    <>
+      Noser Treuhand GmbH / Korki <br />
+      18752 Näfels
+    </>
+  ),
   location: {
     text: "Location",
     address: "Lerchenstrasse 22, 8754 Netstal",
@@ -22,9 +34,10 @@ export default {
   },
   categories: [
     { title: "Home", href: "/" },
-    { title: "Dienstleistungen", href: "/dienstleistungen" },
+    { title: "Privatkunden", href: "/privatkunden" },
+    { title: "Unternehmen", href: "/unternehmen" },
+    { title: "Nützliche Ressourcen", href: "/nutzliche-ressourcen" },
     { title: "Über uns", href: "/uber-uns" },
-    { title: "Kontakt", href: "/kontakt" },
   ],
   hero: {
     bg: {
@@ -260,10 +273,27 @@ export default {
     },
     map: <>Lerchenstrasse 22, 8754 Netstal</>,
   },
-  service: {
+  privatkunden: {
     banner: {
-      title: <>Unsere Dienstleistungen</>,
-      description: <>Ihre Experten für präzise und zuverlässige Arbeit.</>,
+      title: (
+        <>
+          Sicherheit in
+          <CustomBr byViewport="mobile" /> jedem
+          <CustomBr byViewport="mobile" /> finanziellen
+          <br /> Schritt
+        </>
+      ),
+      description: (
+        <>
+          Unsere Unterstützung reicht von
+          <CustomBr byViewport="mobile" /> einfacher Buchhaltung bis hin zur
+          <CustomBr byViewport="mobile" /> detaillierten Steuerplanung
+          <CustomBr byViewport="desktop" /> und
+          <CustomBr byViewport="mobile" /> schafft in jedem Bereich eine
+          <CustomBr byViewport="mobile" /> solide Grundlage für Ihre
+          <CustomBr byViewport="mobile" /> finanziellen Entscheidungen.
+        </>
+      ),
       background: {
         src: "/imgs/service/bg.png",
         alt: "Background Header",
@@ -272,6 +302,30 @@ export default {
       tags: {
         content: [<>Qualität</>, <>Präzision</>],
       },
+    },
+    content: {
+      img: [
+        {
+          src: "/imgs/privatkunden/intro/article1.png",
+          alt: "Img 01",
+        },
+      ],
+      text: (
+        <>
+          <h2>Unsere Philosophie</h2>
+
+          <p>
+            Finanzen können herausfordernd sein, doch wir machen es Ihnen einfach und verständlich,
+            sodass Sie sich entspannt zurücklehnen können. Ob Steuerplanung, Buchhaltung oder
+            Nachlassfragen – wir sorgen dafür, dass Sie stets den Überblick behalten und mit ruhigem
+            Gewissen den Kopf für das Wichtige frei haben. Mit smarten digitalen Tools und
+            umfassender Erfahrung gestalten wir Ihre Finanzen transparent und leicht nachvollziehbar
+            – für Entscheidungen, die Ihnen Sicherheit geben. Diskretion und Verlässlichkeit prägen
+            unsere Arbeit, damit Sie sich sicher fühlen und wissen, dass Ihre Angelegenheiten bei
+            uns in guten Händen sind.
+          </p>
+        </>
+      ),
     },
   },
   content: [
@@ -584,8 +638,49 @@ export default {
         Handwerk – das sind wir.
       </>
     ),
+    share: [
+      {
+        href: "https://web.facebook.com/",
+        icon: FaFacebookF,
+        title: "Facebook",
+      },
+      {
+        href: "https://www.linkedin.com/company/treuhand-suisse/",
+        icon: FaInstagram,
+        title: "Instagram",
+      },
+      {
+        href: "https://www.linkedin.com/company/lm-finance-ag",
+        icon: FaLinkedin,
+        title: "Linkedin",
+      },
+    ],
+    time: {
+      text: "Öffnungszeiten",
+      days: [
+        <>
+          <b>Montag</b> 08:00–17:00{" "}
+        </>,
+        <>
+          <b>Dienstag</b> 08:00–17:00{" "}
+        </>,
+        <>
+          <b>Mittwoch</b> 08:00–17:00{" "}
+        </>,
+        <>
+          <b>Donnerstag</b> 08:00–17:00{" "}
+        </>,
+        <>
+          <b>Freitag</b> 08:00–16:00{" "}
+        </>,
+      ],
+    },
     copyrigth: {
-      text: <>Copyright © 2024 Andrade Gisper + Maler GmbH</>,
+      text: (
+        <>
+          ©Copyright 2024 <b>Noser Treuhand</b>
+        </>
+      ),
       fiber: (
         <>
           Mit 💚 entwickelt von <a href="https://www.fiberweb.ch/">FiberWeb.ch</a>

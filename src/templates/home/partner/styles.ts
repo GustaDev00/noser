@@ -85,4 +85,12 @@ export const Container = styled.div`
   `}
 `;
 
-export const Card = styled(CardWhite)``;
+export const Card = styled(CardWhite)`
+  p {
+    width: 40rem;
+
+    ${mediaMaxWidth("mobile")`
+      width: 100%;
+    `}
+  }
+`;

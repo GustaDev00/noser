@@ -23,7 +23,6 @@ export default () => {
         <S.Divider />
         <S.Container>
           <Card type="peoples" />
-          <Card type="clients" />
           <Card type="quality" />
         </S.Container>
       </S.Wrapper>

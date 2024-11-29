@@ -11,6 +11,7 @@ export default () => {
     const modal = headerRef.current.querySelector("[data-timeline=modal]");
     const title = headerRef.current.querySelector("h1");
     const description = headerRef.current.querySelector("#descriptionHeader");
+    const arrow = headerRef.current.querySelector("svg");
 
     const tl = gsap.timeline({ delay: 0.5 });
 
@@ -18,7 +19,7 @@ export default () => {
       title,
       { y: 50, opacity: 0 },
       { y: 0, opacity: 1, duration: 0.5 },
-      "-=0.5",
+      "-=0.7",
     );
 
     if (description) {
@@ -26,7 +27,13 @@ export default () => {
     }
 
     if (modal) {
-      tl.fromTo(modal, { y: 50, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5 }, "-=0.5");
+      tl.fromTo(modal, { y: 50, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5 }, "-=0.3");
+    }
+
+    if (arrow) {
+      tl.fromTo(arrow, { y: 50, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5 }, "-=0.1");
+
+      gsap.to(arrow, { y: 1, duration: 2, repeat: -1, yoyo: true, ease: "power1.inOut" });
     }
   }, []);
 
