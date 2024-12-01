@@ -5,7 +5,7 @@ export default ({ ...props }) => {
   const { img, title, description, link } = C;
 
   return (
-    <S.Wrapper {...props}>
+    <S.Wrapper>
       <S.img {...img} />
       <S.Content>
         <S.Title>{title}</S.Title>

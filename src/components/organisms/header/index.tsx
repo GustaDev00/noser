@@ -2,11 +2,11 @@ import * as S from "./styles";
 import { HeaderProps } from "./props";
 import useAnimation from "./animations";
 
-export const Header = ({ title, description, modal, background, tags }: HeaderProps) => {
+export const Header = ({ title, description, modal, background, tags, ...props }: HeaderProps) => {
   const { headerRef } = useAnimation();
 
   return (
-    <S.Header $modal={!!modal} $tags={!!tags} ref={headerRef}>
+    <S.Header $modal={!!modal} $tags={!!tags} ref={headerRef} {...props}>
       <S.Background {...background} />
       <S.Wrapper>
         <S.Content>

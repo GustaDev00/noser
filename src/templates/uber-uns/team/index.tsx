@@ -1,61 +1,44 @@
 import * as S from "./styles";
-import C from "@/constants";
+import C from "./cosntants";
+import { useState } from "react";
 
 export default () => {
-  return (
-    <S.TeamContainer>
-      <S.Wrapper>
-        <S.Container>
-          <S.BigImage {...C.team.images[0]} />
-          <S.SmallImage {...C.team.images[1]} />
-        </S.Container>
-        <S.Content>
-          {C.team.content.map(({ title, content, list }, index) => {
-            if (list) {
-              return (
-                <S.Article key={index}>
-                  <S.Title>{title}</S.Title>
-                  <S.List>
-                    {list.map(({ text, title }, index) => (
-                      <S.ListItem key={index}>
-                        <S.Icon>
-                          <S.Check />
-                        </S.Icon>
-                        <S.ArticleContent>
-                          <S.ListTitle>{title}</S.ListTitle>
-                          <S.ListText>{text}</S.ListText>
-                        </S.ArticleContent>
-                      </S.ListItem>
-                    ))}
-                  </S.List>
-                </S.Article>
-              );
-            }
+  const [activeCards, setActiveCards] = useState<number[]>([]);
 
-            if (content) {
-              return (
-                <S.Article key={index}>
-                  <S.Title>{title}</S.Title>
-                  <S.Text>{content}</S.Text>
-                </S.Article>
-              );
-            }
-          })}
-        </S.Content>
-      </S.Wrapper>
+  const handleCardClick = (index: number) => {
+    setActiveCards((prev) =>
+      prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index],
+    );
+  };
+
+  return (
+    <S.Team>
       <S.Wrapper>
-        <S.TeamMembers>
-          {C.team.members.map(({ photo, name, text }, index) => (
-            <S.TeamMember key={index}>
-              <S.MemberImage {...photo} />
-              <S.MemberData>
-                <S.MemberTitle>{name}</S.MemberTitle>
-                <S.MemberText>{text}</S.MemberText>
-              </S.MemberData>
-            </S.TeamMember>
+        <S.Content>
+          <S.Title>{C.title}</S.Title>
+          <S.Description>{C.description}</S.Description>
+        </S.Content>
+        <S.Container>
+          {C.team.map(({ name, text, photo }, index) => (
+            <S.Card
+              key={index}
+              $active={activeCards.includes(index)}
+              onClick={() => handleCardClick(index)}
+            >
+              <S.Img {...photo} />
+              <S.Article>
+                <S.ContentCard>
+                  <S.Text>
+                    <S.Name>{name}</S.Name>
+                    <S.Arrow />
+                  </S.Text>
+                  <S.Span>{text}</S.Span>
+                </S.ContentCard>
+              </S.Article>
+            </S.Card>
           ))}
-        </S.TeamMembers>
+        </S.Container>
       </S.Wrapper>
-    </S.TeamContainer>
+    </S.Team>
   );
 };

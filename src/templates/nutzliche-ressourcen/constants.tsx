@@ -1,22 +1,28 @@
 import { CustomBr } from "@/components/atoms/custom-br";
+import { title } from "process";
 
 export default {
-  title: (
-    <>
-      Für Unternehmer, die mehr Kontrolle
-      <CustomBr byViewport="desktop" /> und weniger Finanzsorgen wollen
-    </>
-  ),
-  description: (
-    <>
-      Komplexität wird Klarheit – wir schaffen ein Finanzfundament, das Wachstum und Sicherheit für
-      Ihr
-      <CustomBr byViewport="desktop" /> Unternehmen möglich macht.
-    </>
-  ),
-  background: {
-    src: "/imgs/unternehmen/bg.png",
-    alt: "Background Header",
+  banner: {
+    title: (
+      <>
+        Nützliche Links für Ihre Finanz- und
+        <br /> Verwaltungsbedürfnisse
+      </>
+    ),
+    description: (
+      <>
+        Hier finden Sie eine Sammlung
+        <CustomBr byViewport="mobile" /> wichtiger Links und Dokumente,
+        <CustomBr byViewport="mobile" /> die Ihnen bei steuerlichen und
+        <CustomBr byViewport="mobile" /> administrativen
+        <CustomBr byViewport="desktop" /> Angelegenheiten
+        <CustomBr byViewport="mobile" /> helfen
+      </>
+    ),
+    background: {
+      src: "/imgs/nutzliche-ressourcen/bg.png",
+      alt: "Background Header",
+    },
   },
   accounting: {
     list: [

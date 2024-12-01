@@ -43,6 +43,7 @@ export const List = styled.ul`
   letter-spacing: -0.1113rem;
 
   ${mediaMaxWidth("isMobileOrTabletVertical")`
+    color: ${({ theme }) => theme.black};
     flex-direction: column;
     font-size: 3rem;
     line-height: 4.2rem;

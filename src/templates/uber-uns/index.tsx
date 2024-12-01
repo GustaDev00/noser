@@ -1,19 +1,19 @@
 "use client";
 
 import { type FC } from "react";
-import { Header } from "@/components/organisms/header";
 import C from "./constants";
-import Contact from "@/shared/contact";
-import Content from "./content";
+import * as S from "./styles";
 import Team from "./team";
 
 export const UberUnsTemplate: FC = () => {
   return (
     <>
-      <Header {...C.header} />
-      <Content />
+      <S.Header {...C.header} />
+      <S.Article imgs={C.content.imgs}>{C.content.text}</S.Article>
       <Team />
-      <Contact />
+      <S.ArticleInverted imgs={C.content_inverted.imgs} tag={true} invert={true}>
+        {C.content_inverted.text}
+      </S.ArticleInverted>
     </>
   );
 };

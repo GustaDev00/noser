@@ -25,5 +25,5 @@ export const Card: FC<CardProps> = ({ type, ...props }) => {
     }
   }, [type]);
 
-  return <S.Card>{useRender}</S.Card>;
+  return <S.Card {...props}>{useRender}</S.Card>;
 };

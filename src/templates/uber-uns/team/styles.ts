@@ -1,216 +1,174 @@
-import { styled } from "styled-components";
+import { ArrowIcon } from "@/components/svgs/arrow";
 import { Wrapper as _Wrapper } from "@/styles/components/wrapper";
-import { LazyImage } from "@/components/atoms/lazy-image";
 import { mediaMaxWidth } from "@/utils/media-query";
-import { CheckConfirmed } from "@/components/svgs/customers";
+import { styled } from "styled-components";
 
-export const TeamContainer = styled.div``;
+export const Team = styled.section`
+  position: relative;
 
-export const Wrapper = styled(_Wrapper)`
-  &:before {
+  &::before,
+  &::after {
     content: "";
     position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    display: block;
-    width: calc(100% - (16.3rem * 2));
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 0.1rem;
-    background: ${({ theme }) => theme.black015};
+    background: rgba(0, 0, 0, 0.18);
+  }
 
-    ${mediaMaxWidth("isMobileOrTabletVertical")`
-      width: calc(100% - (4rem * 2));
-    `}
-
-    ${mediaMaxWidth("mobile")`
-      width: calc(100% - (2.2rem * 2))
-    `}
+  &::after {
+    top: unset;
+    bottom: 0;
   }
 `;
 
-export const Image = styled(LazyImage)``;
-
-export const TeamContent = styled.div``;
+export const Wrapper = styled(_Wrapper)`
+  flex-direction: column;
+`;
 
 export const Content = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 9.5rem;
-  padding-left: 8.8rem;
+  margin-bottom: 11.2rem;
 
   ${mediaMaxWidth("mobile")`
-    gap: 6.4rem;
-    padding-left: 0;
-    margin: 3.2rem 0;
+    margin-bottom: 4.8rem;
   `}
 `;
-
-export const Article = styled.article``;
 
 export const Title = styled.h2`
-  color: ${({ theme }) => theme.eerieBlack};
-  font-size: 8rem;
+  color: #1f1f1f;
+  font-family: var(--manrope);
+  font-size: 6.9rem;
   font-weight: 700;
-  line-height: 7.4rem;
-  letter-spacing: -0.4048rem;
-  margin-bottom: 4.6rem;
+  line-height: 9.8rem;
+  letter-spacing: -0.3491rem;
 
   ${mediaMaxWidth("mobile")`
-    font-size: 4rem;
-    letter-spacing: -0.2226rem;
-    margin-bottom: 3rem;
-  `}
+  font-size: 4.2rem;
+  line-height: 6.5rem;
+  letter-spacing: -0.2125rem;
+`}
 `;
 
-export const Text = styled.p`
-  color: ${({ theme }) => theme.eerieBlack};
-  font-size: 2.5rem;
-  font-weight: 400;
-  line-height: 4.2rem;
-  letter-spacing: -0.0002rem;
-
-  ${mediaMaxWidth("mobile")`
-    font-size: 2rem;
-  `}
-`;
-
-export const List = styled.ul`
-  display: flex;
-  flex-direction: column;
-  gap: 3.7rem;
-`;
-
-export const ListItem = styled.li`
-  display: flex;
-  align-items: center;
-  gap: 3rem;
-
-  ${mediaMaxWidth("mobile")`
-    flex-direction: column; 
-    align-items: flex-start;
-    gap: 1.7rem;
-  `}
-`;
-
-export const Icon = styled.div`
-  background: ${({ theme }) => theme.white};
-  box-shadow: 0 0.4rem 1.6rem ${({ theme }) => theme.black008};
-  border-radius: 50%;
-  width: 8rem;
-  height: 8rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  svg {
-    width: 2.6rem;
-    height: 2.6rem;
-  }
-`;
-
-export const ArticleContent = styled.article`
-  width: 70%;
-
-  ${mediaMaxWidth("mobile")`
-    width: 100%;
-  `}
-`;
-
-export const ListTitle = styled.h3`
-  color: ${({ theme }) => theme.eerieBlack};
-  font-size: 2.6rem;
-  font-weight: 700;
-  line-height: 4.2rem;
+export const Description = styled.p`
+  color: #121212;
+  font-size: 2.8rem;
+  font-weight: 300;
+  line-height: 4.6rem;
   letter-spacing: -0.0003rem;
-`;
 
-export const ListText = styled.p`
-  color: ${({ theme }) => theme.eerieBlack};
-  font-size: 2rem;
-  font-weight: 400;
-  line-height: 3rem;
+  ${mediaMaxWidth("mobile")`
+  font-size: 2.2rem;
+  line-height: 4.6rem;
   letter-spacing: -0.0002rem;
+`}
 `;
-
-export const Check = styled(CheckConfirmed)``;
 
 export const Container = styled.div`
   display: flex;
-  flex-direction: column;
-  gap: 5.4rem;
+  gap: 3.7rem;
 
   ${mediaMaxWidth("mobile")`
-    gap: 3.4rem;
-    margin-top: 5.2rem;
-  `}
-`;
-
-export const BigImage = styled(LazyImage)`
-  width: 61.8rem;
-  height: 82.4rem;
-  object-fit: cover;
-
-  ${mediaMaxWidth("mobile")`
-    width: 100%;
-    height: 45.9rem;
-  `}
-`;
-
-export const SmallImage = styled(LazyImage)`
-  width: 61.8rem;
-  height: 55.4rem;
-  object-fit: cover;
-
-  ${mediaMaxWidth("mobile")`
-    width: 100%;
-    height: 33rem;
-  `}
-`;
-
-export const TeamMembers = styled.ul`
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-
-  ${mediaMaxWidth("mobile")`
-    margin: 3.2rem 0;
     flex-direction: column;
-    justify-content: flex-start;
-    gap: 4.4rem;
   `}
 `;
 
-export const TeamMember = styled.li``;
+export const ContentCard = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 3.2rem;
+  max-height: 9rem;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+`;
 
-export const MemberImage = styled(LazyImage)`
-  width: 32.6rem;
-  height: 34.7rem;
+export const Arrow = styled(ArrowIcon)`
+  width: 4.2rem;
+  height: 3.6rem;
+  transition: transform 0.4s ease;
+  transition: transform 0.4s ease;
+
+  path {
+    fill: #fff;
+  }
+`;
+
+export const Card = styled.div<{ $active?: boolean }>`
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  height: 51.4rem;
+  padding: 4.5rem 3.2rem;
+
+  ${ContentCard} {
+    max-height: ${({ $active }) => ($active ? "40rem" : "9rem")};
+  }
+
+  ${Arrow} {
+    transform: ${({ $active }) => ($active ? "rotate(45deg)" : "rotate(0deg)")};
+  }
+`;
+
+export const Img = styled.img`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  object-position: bottom;
-
   border-radius: 0.8rem;
-  border: 0.1rem solid ${({ theme }) => theme.blue015};
+`;
 
-  ${mediaMaxWidth("mobile")`
+export const Article = styled.article`
+  position: relative;
+  width: 100%;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: rgb(157 157 157);
+  }
+
+  &::after {
+    bottom: -0.3rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    z-index: 2;
+  }
+
+  &::before {
     width: 100%;
-    height: 37.2rem;
-  `}
+    height: 0.2rem;
+  }
 `;
 
-export const MemberData = styled.article`
-  margin-top: 2.1rem;
+export const Text = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 2.2rem;
 `;
 
-export const MemberTitle = styled.h3`
-  color: ${({ theme }) => theme.black};
-  font-size: 2.8rem;
-  font-weight: 700;
-  line-height: 4.1rem;
+export const Span = styled.p`
+  font-family: var(--albertsans);
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 3.4rem;
+  letter-spacing: -0.0002rem;
 `;
 
-export const MemberText = styled.p`
-  color: ${({ theme }) => theme.blackCoral};
-  font-size: 1.8rem;
-  font-weight: 400;
-  line-height: 2.8rem;
+export const Name = styled.h3`
+  color: #fff;
+  font-family: var(--manrope);
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: 8.7rem;
+  letter-spacing: -0.1619rem;
 `;
