@@ -11,25 +11,24 @@ export const Loading = styled.div<{ $isActive: boolean }>`
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 20;
+  z-index: 50;
   opacity: ${({ $isActive }) => ($isActive ? 1 : 0)};
   visibility: ${({ $isActive }) => ($isActive ? "visible" : "hidden")};
   transition: opacity 0.5s ease, visibility 0.5s ease;
 `;
 
 export const Container = styled.div`
+  display: flex;
+  align-items: center;
   position: relative;
-  border: 0.3rem solid ${({ theme }) => theme.rosewood};
+  border: 0.3rem solid #0d4d9b;
   padding: 5rem;
   border-radius: 50%;
 `;
 
-export const Img = styled(LazyImage)``;
-
 export const ProgressMensage = styled.p`
   position: absolute;
   left: 50%;
-  margin-top: 8rem;
   transform: translateX(-50%);
   font-size: 1.8rem;
   text-align: center;
