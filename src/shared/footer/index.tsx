@@ -74,8 +74,8 @@ export const Footer = () => {
             <S.TitleLine>{C.footer.time.text}</S.TitleLine>
 
             <S.List>
-              {C.footer.time.days.map((text) => (
-                <S.Item>{text}</S.Item>
+              {C.footer.time.days.map((text, index) => (
+                <S.Item key={index}>{text}</S.Item>
               ))}
             </S.List>
           </S.Column>
