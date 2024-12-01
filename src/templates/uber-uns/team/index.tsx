@@ -1,9 +1,11 @@
 import * as S from "./styles";
-import C from "./cosntants";
+import C from "./constants";
 import { useState } from "react";
+import useAnimation from "./animation";
 
 export default () => {
-  const [activeCards, setActiveCards] = useState<number[]>([]);
+  const [activeCards, setActiveCards] = useState<number[]>([0]);
+  const { sectionRef } = useAnimation();
 
   const handleCardClick = (index: number) => {
     setActiveCards((prev) =>
@@ -12,18 +14,19 @@ export default () => {
   };
 
   return (
-    <S.Team>
-      <S.Wrapper>
-        <S.Content>
-          <S.Title>{C.title}</S.Title>
-          <S.Description>{C.description}</S.Description>
+    <S.Team ref={sectionRef}>
+      <S.Wrapper data-timeline="wrapper">
+        <S.Content data-timeline="content">
+          <S.Title data-timeline="title">{C.title}</S.Title>
+          <S.Description data-timeline="description">{C.description}</S.Description>
         </S.Content>
-        <S.Container>
+        <S.Container data-timeline="container">
           {C.team.map(({ name, text, photo }, index) => (
             <S.Card
               key={index}
               $active={activeCards.includes(index)}
               onClick={() => handleCardClick(index)}
+              data-timeline="card"
             >
               <S.Img {...photo} />
               <S.Article>

@@ -10,24 +10,28 @@ export default function useAnimation() {
     const timeline = gsap.timeline({
       scrollTrigger: {
         trigger: sectionRef.current,
-        start: "top 80%",
+        start: "top 90%",
         end: "bottom 20%",
         toggleActions: "play none none none",
       },
     });
 
-    const bg = sectionRef.current.querySelector("[data-timeline='bg']");
     const wrapper = sectionRef.current.querySelector("[data-timeline='wrapper']");
+    const content = sectionRef.current.querySelector("[data-timeline='content']");
     const title = sectionRef.current.querySelector("[data-timeline='title']");
+    const description = sectionRef.current.querySelector("[data-timeline='description']");
     const container = sectionRef.current.querySelector("[data-timeline='container']");
-    const contents = sectionRef.current.querySelectorAll("[data-timeline='content']");
+    const img = sectionRef.current.querySelector("[data-timeline='img']");
+    const cards = sectionRef.current.querySelectorAll("[data-timeline='card']");
 
     timeline
-      .from(bg, { opacity: 0, scale: 1.1, duration: 1 })
-      .from(wrapper, { opacity: 0, y: 50, duration: 1 }, "-=0.5")
+      .from(wrapper, { opacity: 0, y: 50, duration: 1 })
+      .from(content, { opacity: 0, y: 50, duration: 1 }, "-=0.5")
       .from(title, { opacity: 0, y: 20, duration: 0.5 }, "-=0.5")
-      .from(container, { opacity: 0, y: 30, duration: 1 }, "-=0.5")
-      .from(contents, { opacity: 0, y: 20, stagger: 0.3, duration: 0.5 }, "-=0.5");
+      .from(description, { opacity: 0, y: 20, duration: 0.5 }, "-=0.5")
+      .from(container, { opacity: 0, y: 50, duration: 1 }, "-=0.5")
+      .from(img, { opacity: 0, x: -50, duration: 1 }, "-=0.5")
+      .from(cards, { opacity: 0, y: 50, stagger: 0.3, duration: 1 }, "-=0.5");
 
     return () => {
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());

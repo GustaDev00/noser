@@ -2,26 +2,30 @@ import { CustomBr } from "@/components/atoms/custom-br";
 import * as S from "./styles";
 import { CustomersIcons } from "@/components/svgs/customers";
 import { PursueIcon } from "@/components/svgs/pursue";
+import useAnimation from "./animation";
 
-export default () => {
+export default function Partner() {
+  const { sectionRef } = useAnimation();
+
   return (
-    <S.Partner>
-      <S.Wrapper>
-        <S.Content>
-          <S.Title>
+    <S.Partner ref={sectionRef}>
+      <S.Wrapper data-timeline="wrapper">
+        <S.Content data-timeline="content">
+          <S.Title data-timeline="title">
             Ihre
             <CustomBr byViewport="mobile" /> Treuhandpartner
             <CustomBr byViewport="mobile" /> für
             <CustomBr byViewport="desktop" /> nachhaltigen
             <CustomBr byViewport="mobile" /> Erfolg
           </S.Title>
-          <S.Description>
+          <S.Description data-timeline="description">
             Individuelle Beratung und
             <CustomBr byViewport="mobile" /> zuverlässige Unterstützung für
             <br /> Ihren finanziellen Erfolg.
           </S.Description>
-          <S.Container>
+          <S.Container data-timeline="container">
             <S.Card
+              data-timeline="card"
               icon={<CustomersIcons />}
               title={<>Privatkunden</>}
               description={
@@ -38,6 +42,7 @@ export default () => {
               }}
             />
             <S.Card
+              data-timeline="card"
               icon={<PursueIcon />}
               title={<>Unternehmen</>}
               description={
@@ -56,10 +61,11 @@ export default () => {
           </S.Container>
         </S.Content>
         <S.Img
+          data-timeline="img"
           src="/imgs/home/partner/img.png"
           alt="Individuelle Beratung und zuverlässige Unterstützung für Ihren finanziellen Erfolg."
         />
       </S.Wrapper>
     </S.Partner>
   );
-};
+}

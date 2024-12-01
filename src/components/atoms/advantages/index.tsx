@@ -1,19 +1,19 @@
 import * as S from "./styles";
-import useAnimation from "./animation";
 import { FC } from "react";
 import { AdvantagesProps } from "./props";
+import useAnimation from "./animation";
 
 export const Advantages: FC<AdvantagesProps> = ({ bg, title, list, ...props }) => {
-  useAnimation();
+  const { sectionRef } = useAnimation();
 
   return (
-    <S.Advantages {...props}>
-      <S.Bg {...bg} />
-      <S.Wrapper>
-        <S.Title>{title}</S.Title>
-        <S.Container>
+    <S.Advantages ref={sectionRef} {...props}>
+      <S.Bg {...bg} data-timeline="bg" />
+      <S.Wrapper data-timeline="wrapper">
+        <S.Title data-timeline="title">{title}</S.Title>
+        <S.Container data-timeline="container">
           {list.map(({ title, text }, index) => (
-            <S.Content key={index}>
+            <S.Content key={index} data-timeline="content">
               <S.SubTitle>{title}</S.SubTitle>
               <S.Text>{text}</S.Text>
             </S.Content>

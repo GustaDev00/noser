@@ -1,23 +1,22 @@
 import * as S from "./styles";
-import C from "./constants";
-import useAnimation from "./animation";
 import { FC } from "react";
 import { ArticleProps } from "./props";
+import useAnimation from "./animation";
 
 export const Article: FC<ArticleProps> = ({ imgs, tag, invert, children, ...props }) => {
-  useAnimation();
+  const { sectionRef } = useAnimation();
 
   return (
-    <S.Article {...props}>
-      <S.Wrapper $inverted={invert}>
-        <S.Container>
+    <S.Article ref={sectionRef} {...props}>
+      <S.Wrapper $inverted={invert} data-timeline="wrapper">
+        <S.Container data-timeline="container">
           {imgs.map((img, i) => (
-            <S.Img key={i} {...img} />
+            <S.Img key={i} {...img} data-timeline="img" />
           ))}
 
-          {tag && <S.Card type="quality" />}
+          {tag && <S.Card type="quality" data-timeline="card" />}
         </S.Container>
-        <S.Content>{children}</S.Content>
+        <S.Content data-timeline="content">{children}</S.Content>
       </S.Wrapper>
     </S.Article>
   );

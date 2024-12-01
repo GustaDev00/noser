@@ -1,19 +1,24 @@
 import C from "./constants";
 import * as S from "./styles";
+import useAnimation from "./animation";
 
-export default () => {
+export default function Intro() {
+  const { sectionRef } = useAnimation();
+
   return (
-    <S.Intro>
-      <S.Wrapper>
-        <S.Content>
-          <S.Article>
-            <S.Title>{C.title}</S.Title>
-            <S.Button {...C.button}>{C.button.title}</S.Button>
+    <S.Intro ref={sectionRef}>
+      <S.Wrapper data-timeline="wrapper">
+        <S.Content data-timeline="content">
+          <S.Article data-timeline="article">
+            <S.Title data-timeline="title">{C.title}</S.Title>
+            <S.Button data-timeline="button" {...C.button}>
+              {C.button.title}
+            </S.Button>
           </S.Article>
-          <S.Text>{C.description}</S.Text>
+          <S.Text data-timeline="text">{C.description}</S.Text>
         </S.Content>
-        <S.Img {...C.img} />
+        <S.Img data-timeline="img" {...C.img} />
       </S.Wrapper>
     </S.Intro>
   );
-};
+}

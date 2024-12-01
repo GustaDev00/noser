@@ -80,14 +80,13 @@ export const ContentCard = styled.div`
   padding-bottom: 3.2rem;
   max-height: 9rem;
   overflow: hidden;
-  transition: max-height 0.4s ease;
+  transition: max-height 1s ease;
 `;
 
 export const Arrow = styled(ArrowIcon)`
   width: 4.2rem;
   height: 3.6rem;
-  transition: transform 0.4s ease;
-  transition: transform 0.4s ease;
+  transition: transform 0.6s ease;
 
   path {
     fill: #fff;
