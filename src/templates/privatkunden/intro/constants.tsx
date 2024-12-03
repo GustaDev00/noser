@@ -24,7 +24,7 @@ export default {
   ),
   button: {
     href: "/uber-uns",
-    title: "Bewerben",
+    title: "Gespräch starten",
   },
   img: {
     src: "/imgs/privatkunden/intro/hero.png",
