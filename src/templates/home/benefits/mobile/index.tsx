@@ -7,7 +7,7 @@ export default () => {
       <S.Wrapper>
         <S.Content>
           <S.Title>Unsere Vorteile</S.Title>
-          <S.Link href="#" title="Unsere Treuhandlösungen" />
+          <S.Link href="/uber-uns" title="Unsere Treuhandlösungen" />
         </S.Content>
         <S.Container>
           <S.WrapperCards>

@@ -23,7 +23,7 @@ export default {
     </>
   ),
   button: {
-    href: "#",
+    href: "/uber-uns",
     title: "Bewerben",
   },
   img: {

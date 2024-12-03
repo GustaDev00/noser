@@ -4,6 +4,7 @@ import { ArrowUpIcon as _ArrowUpIcon } from "@/components/svgs/arrow-up";
 import { LazyImage } from "@/components/atoms/lazy-image";
 import { ButtonSwipe } from "@/components/atoms/button-swipe";
 import { mediaMaxWidth } from "@/utils/media-query";
+import { GrFormNextLink } from "react-icons/gr";
 
 export const Downloads = styled.section``;
 
@@ -196,7 +197,9 @@ export const Icon = styled.div`
   `}
 `;
 
-export const DownloadIcon = styled(_DownloadIcon)`
-  width: 2.2rem;
-  height: 2.2rem;
+export const DownloadIcon = styled(GrFormNextLink)`
+  width: 2rem;
+  height: 2rem;
+  color: #1d4e89;
+  transform: rotate(-45deg);
 `;

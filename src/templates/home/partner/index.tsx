@@ -37,7 +37,7 @@ export default function Partner() {
                 </>
               }
               link={{
-                href: "#",
+                href: "/privatkunden",
                 title: "Mehr dazu",
               }}
             />
@@ -54,7 +54,7 @@ export default function Partner() {
                 </>
               }
               link={{
-                href: "#",
+                href: "/unternehmen",
                 title: "Mehr dazu",
               }}
             />

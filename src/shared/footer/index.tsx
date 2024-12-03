@@ -19,7 +19,7 @@ export const Footer = () => {
             <CustomBr byViewport="mobile" /> Ihre Finanzen
           </S.TitleCta>
           <S.SubtitleCta>
-            wir sind für Sie da.
+            Wir sind für Sie da.
             <br /> Sprechen wir darüber, wie wir
             <CustomBr byViewport="mobile" /> Ihre Ziele
             <CustomBr byViewport="desktop" /> realisieren.

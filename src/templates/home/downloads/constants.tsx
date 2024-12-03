@@ -15,7 +15,7 @@ export default {
     </>
   ),
   link: {
-    href: "#",
+    href: "/uber-uns",
     title: "Mehr erfahren",
   },
   img: {

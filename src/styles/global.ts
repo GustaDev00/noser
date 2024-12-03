@@ -17,7 +17,7 @@ export const GlobalStyles = createGlobalStyle`
     color: ${theme.black};
 
     ${mediaMaxWidth(900)`
-      width: 0px;wq
+      width: 0px;
     `}
 
     ${mediaMaxWidth("mobile")`

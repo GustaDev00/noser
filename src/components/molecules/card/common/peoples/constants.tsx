@@ -16,7 +16,7 @@ export default {
   ),
   link: {
     title: "Mehr dazu",
-    href: "#",
+    href: "/uber-uns",
   },
   img: {
     src: "/imgs/cards/peoples.png",

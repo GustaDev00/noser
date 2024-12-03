@@ -1,7 +1,7 @@
 export default {
   title: "Unser Angebot",
   button: {
-    href: "#",
+    href: "/uber-uns",
     title: "Gespräch starten",
   },
 };

@@ -124,7 +124,7 @@ export default {
         <h2>Unsere Philosophie</h2>
 
         <p>
-          truktur und Klarheit in Ihren Finanzen, so können Sie Wachstumsstrategien mühelos
+          Struktur und Klarheit in Ihren Finanzen, so können Sie Wachstumsstrategien mühelos
           umsetzen, ohne sich um das Finanzielle zu sorgen. Als erfahrener Partner nehmen wir Ihnen
           die Last finanzieller Entscheidungen ab, von der Steueroptimierung bis hin zur
           langfristigen Planung, und schaffen den Raum, den Sie für Ihr Wachstum brauchen.  Mit
