@@ -7,6 +7,7 @@ import { StyledComponentsRegistry } from "@/lib/registry";
 import { theme } from "@/styles/theme";
 import { GlobalStyles } from "@/styles/global";
 import { GSAPInitializer } from "@/components/atoms/gsap-initializer";
+import Script from "next/script";
 
 import "swiper/css";
 import "swiper/swiper-bundle.css";
@@ -36,6 +37,18 @@ const RootLayout = ({
             </main>
           </ThemeProvider>
         </StyledComponentsRegistry>
+        <Script
+          id="chatbot-config"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.embeddedChatbotConfig = {
+                chatbotId: "-szYnVtSbo_g6B8EMGBGv",
+                domain: "www.chatbase.co"
+              }
+            `,
+          }}
+        />
+        <Script src="https://www.chatbase.co/embed.min.js" strategy="afterInteractive" defer />
       </body>
     </html>
   );

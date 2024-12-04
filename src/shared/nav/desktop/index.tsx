@@ -20,7 +20,7 @@ export default () => {
           </S.List>
         </S.Nav>
 
-        <S.Chat>Gespräch starten</S.Chat>
+        <S.Chat title="Gespräch starten">Gespräch starten</S.Chat>
       </S.Header>
     </>
   );

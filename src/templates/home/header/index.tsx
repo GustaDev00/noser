@@ -21,7 +21,9 @@ export default () => {
             <br data-timeline="br" />
             konzentrieren können.
           </S.Subtitle>
-          <S.Button data-timeline="button">Gespräch starten</S.Button>
+          <S.Button data-timeline="button" title="Gespräch starten">
+            Gespräch starten
+          </S.Button>
         </S.Content>
         <S.Divider data-timeline="divider" />
         <S.Container data-timeline="container">
