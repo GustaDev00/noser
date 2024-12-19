@@ -28,7 +28,7 @@ export default {
         src: "/imgs/uber-uns/team/2.png",
         alt: "Team Member 01",
       },
-      name: "Dominik Noser",
+      name: "Dominic Noser",
       text: (
         <>
           Sachbearbeiter Strukturiert und engagiert

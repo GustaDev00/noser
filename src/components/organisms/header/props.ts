@@ -11,4 +11,5 @@ export interface HeaderProps {
     src: string;
     alt: string;
   };
-}
+  position?: "left" | "right";
+};

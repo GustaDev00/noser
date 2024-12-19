@@ -11,7 +11,7 @@ import { Advantages } from "@/components/atoms/advantages";
 export const PrivatkundenTemplate: FC = () => {
   return (
     <>
-      <Header {...C.privatkunden.banner} />
+      <Header {...C.privatkunden.banner} position="right" />
       <Intro />
       <Article imgs={C.privatkunden.content.img}>{C.privatkunden.content.text}</Article>
       <Accounting {...C.privatkunden.accounting} />

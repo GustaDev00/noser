@@ -570,11 +570,7 @@ export default {
         icon: FaInstagram,
         title: "Instagram",
       },
-      {
-        href: "https://www.linkedin.com/company/lm-finance-ag",
-        icon: FaLinkedin,
-        title: "Linkedin",
-      },
+     
     ],
     time: {
       text: "Öffnungszeiten",

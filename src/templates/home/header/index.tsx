@@ -12,7 +12,7 @@ export default () => {
       <S.Wrapper data-timeline="wrapper">
         <S.Content data-timeline="content">
           <S.Title data-timeline="title">
-            Vertrauen <S.Line data-timeline="line" /> Erfolg
+          Mehr als Minus und Plus. Mehr als Soll und Haben.
           </S.Title>
           <S.Subtitle data-timeline="subtitle">
             Ihre Finanzen, klar und
@@ -21,6 +21,7 @@ export default () => {
             <br data-timeline="br" />
             konzentrieren können.
           </S.Subtitle>
+       
           <S.Button data-timeline="button" title="Gespräch starten">
             Gespräch starten
           </S.Button>
