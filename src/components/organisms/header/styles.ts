@@ -75,15 +75,15 @@ export const Description = styled.p`
 
 export const ArrowDown = styled(ArrowLongDownIcon)``;
 
-export const Background = styled(LazyImage)`
+export const Background = styled(LazyImage)<{$position?: "left" | "right";}>`
   position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: 0rem 0rem;
 
-  ${mediaMaxWidth("mobile")`
-    object-position: 35%;
+  ${({$position}) => mediaMaxWidth("mobile")`
+    object-position: ${$position === "left" ? "15%" : $position === "right" ? "75%" : "35%"};
   `}
 `;
 

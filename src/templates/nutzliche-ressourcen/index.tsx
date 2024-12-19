@@ -13,7 +13,7 @@ import Links from "./links";
 export const NutzlichRessourcenTemplate: FC = () => {
   return (
     <>
-      <S.Header {...C.banner} />
+      <S.Header {...C.banner} position="left" />
       <Intro />
       <Links />
       {/* <S.Accounting>

@@ -74,12 +74,9 @@ export default {
         </>
       ),
       items: [
+        
         {
-          href: "https://files.designer.hoststar.ch/68/20/68209cf5-32bb-416b-8287-64cd9ff6bd75.pdf",
-          title: "Ablauf Steuererklärung 2023 – Noser Treuhand GmbH (PDF)",
-        },
-        {
-          href: "https://files.designer.hoststar.ch/8c/5a/8c5a2810-ac8d-4490-8f62-edbcc1e122c5.pdf",
+          href: "https://drive.google.com/file/d/1R3V9xYa7BWV9xiG0dHYBl0CVkM4ieiPH/view",
           title: "Steuererklärung 2023 Checkliste für natürliche Personen (PDF)",
         },
         {
