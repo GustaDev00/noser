@@ -77,7 +77,7 @@ export default {
         
         {
           href: "https://drive.google.com/file/d/1R3V9xYa7BWV9xiG0dHYBl0CVkM4ieiPH/view",
-          title: "Steuererklärung 2023 Checkliste für natürliche Personen (PDF)",
+          title: "Steuererklärung 2024 Checkliste für natürliche Personen (PDF)",
         },
         {
           href: "https://files.designer.hoststar.ch/35/c2/35c2645e-0d2d-460c-822f-665118046f6a.pdf",
