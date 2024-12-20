@@ -58,7 +58,7 @@ export const Title = styled.h1`
   font-size: 12.5rem;
   font-weight: 700;
   letter-spacing: -0.63rem;
-  background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0.3) 100%);
+  background: white;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
