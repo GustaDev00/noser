@@ -50,10 +50,7 @@ export const Title = styled.h1`
   line-height: 9.2rem;
   height: 20rem;
   letter-spacing: -0.4149rem;
-  background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0.3) 60%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #fff;
 
   ${mediaMaxWidth("mobile")`
     height: auto;
