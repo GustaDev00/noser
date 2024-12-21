@@ -58,11 +58,8 @@ export const Title = styled.h1`
   font-size: 12.5rem;
   font-weight: 700;
   letter-spacing: -0.63rem;
-  background: white;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
+  color: #fff;
+  
   ${mediaMaxWidth("isMobileOrTabletVertical")`
     font-size: 11rem;
   `}
