@@ -33,6 +33,7 @@ export default {
     { title: "Unternehmen", href: "/unternehmen" },
     { title: "Nützliche Ressourcen", href: "/nutzliche-ressourcen" },
     { title: "Über uns", href: "/uber-uns" },
+    { title: "Impressum", href: "#" },
   ],
   hero: {
     bg: {
