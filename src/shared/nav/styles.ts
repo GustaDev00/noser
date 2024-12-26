@@ -5,15 +5,16 @@ import { Menu as _Menu } from "@/components/svgs/menu";
 import { Phone as _Phone } from "@/components/svgs/phone";
 import { mediaMaxWidth } from "@/utils/media-query";
 import _Link from "next/link";
-import styled, { css } from "styled-components";
+import { styled } from "styled-components";
 
-export const Header = styled.header`
+export const Header = styled.header<{ $impressum: boolean }>`
   width: 100%;
-  position: absolute;
+  position: ${({ $impressum }) => ($impressum ? "relative" : "absolute")};
   top: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background: ${({ $impressum }) => ($impressum ? "#1D4E89" : "transparent")};
   padding: 3rem 12rem;
   z-index: 3;
 
@@ -21,8 +22,8 @@ export const Header = styled.header`
     padding: 2rem 7.6rem;
   `}
 
-  ${mediaMaxWidth("mobile")`
-    top: 1.5rem;
+  ${({ $impressum }) => mediaMaxWidth("mobile")`
+    top: ${$impressum ? "0" : "1.5rem"};
     padding: 1rem 2rem;
   `}
 `;

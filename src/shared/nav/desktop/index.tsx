@@ -7,7 +7,7 @@ export default () => {
 
   return (
     <>
-      <S.Header>
+      <S.Header $impressum={pathname.includes("impressum")}>
         <S.Logo />
 
         <S.Nav>

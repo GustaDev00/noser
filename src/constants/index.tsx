@@ -32,8 +32,8 @@ export default {
     { title: "Privatkunden", href: "/privatkunden" },
     { title: "Unternehmen", href: "/unternehmen" },
     { title: "Nützliche Ressourcen", href: "/nutzliche-ressourcen" },
+    { title: "Impressum", href: "/impressum" },
     { title: "Über uns", href: "/uber-uns" },
-    { title: "Impressum", href: "#" },
   ],
   hero: {
     bg: {
@@ -571,7 +571,6 @@ export default {
         icon: FaInstagram,
         title: "Instagram",
       },
-     
     ],
     time: {
       text: "Öffnungszeiten",
