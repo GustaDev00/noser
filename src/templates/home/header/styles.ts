@@ -47,8 +47,6 @@ export const Background = styled(LazyImage)`
   `}
 `;
 
-
-
 export const Title = styled.h1`
   display: flex;
   align-items: center;
@@ -59,7 +57,7 @@ export const Title = styled.h1`
   font-weight: 700;
   letter-spacing: -0.63rem;
   color: #fff;
-  
+
   ${mediaMaxWidth("isMobileOrTabletVertical")`
     font-size: 11rem;
   `}
@@ -67,9 +65,9 @@ export const Title = styled.h1`
   ${mediaMaxWidth("mobile")`
     flex-direction: column;
     gap: 1.2rem;
-    font-size: 5rem;
-    line-height: 7rem;
-    letter-spacing: -0.34rem;
+    font-size: 3.8rem;
+    line-height: 5rem;
+    letter-spacing: -0.1rem;
   `}
 `;
 

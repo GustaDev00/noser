@@ -1,7 +1,7 @@
 import { CustomBr } from "@/components/atoms/custom-br";
 
 export default {
-  title: <>Das Team hinter Noser Treuhand</>,
+  title: <>Das Team hinter Noser Treuhand GmbH</>,
   description: (
     <>
       Erfahren, engagiert und stets an Ihrer Seite für finanzielle

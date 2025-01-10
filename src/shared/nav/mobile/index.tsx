@@ -32,13 +32,15 @@ export default () => {
             </S.HeaderModal>
             <S.Container>
               <S.List>
-                {C.categories.map((link, index) => (
-                  <S.Item key={index} $active={pathname === link.href}>
-                    <S.Link {...link} onClick={handleClick}>
-                      {link.title}
-                    </S.Link>
-                  </S.Item>
-                ))}
+                {C.categories
+                  .filter((category) => category.title !== "Impressum")
+                  .map((link, index) => (
+                    <S.Item key={index} $active={pathname === link.href}>
+                      <S.Link {...link} onClick={handleClick}>
+                        {link.title}
+                      </S.Link>
+                    </S.Item>
+                  ))}
               </S.List>
             </S.Container>
             <S.Line />

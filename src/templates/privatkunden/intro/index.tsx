@@ -11,9 +11,6 @@ export default function Intro() {
         <S.Content data-timeline="content">
           <S.Article data-timeline="article">
             <S.Title data-timeline="title">{C.title}</S.Title>
-            <S.Button data-timeline="button" {...C.button}>
-              {C.button.title}
-            </S.Button>
           </S.Article>
           <S.Text data-timeline="text">{C.description}</S.Text>
         </S.Content>

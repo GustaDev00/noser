@@ -12,19 +12,14 @@ export default () => {
       <S.Wrapper data-timeline="wrapper">
         <S.Content data-timeline="content">
           <S.Title data-timeline="title">
-          Mehr als Minus und Plus. Mehr als Soll und Haben.
+            Mehr als Minus und Plus.
+            <br /> Mehr als Soll und Haben.
           </S.Title>
           <S.Subtitle data-timeline="subtitle">
-            Ihre Finanzen, klar und
-            <CustomBr byViewport="mobile" /> verständlich – damit Sie sich
-            <CustomBr byViewport="mobile" /> entspannt auf Ihre Ziele
+            Ihre Finanzen, klar und verständlich – damit Sie sich entspannt auf Ihre Ziele
             <br data-timeline="br" />
             konzentrieren können.
           </S.Subtitle>
-       
-          <S.Button data-timeline="button" title="Gespräch starten">
-            Gespräch starten
-          </S.Button>
         </S.Content>
         <S.Divider data-timeline="divider" />
         <S.Container data-timeline="container">

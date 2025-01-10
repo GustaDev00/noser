@@ -24,7 +24,7 @@ export const Footer = () => {
             <CustomBr byViewport="mobile" /> Ihre Ziele
             <CustomBr byViewport="desktop" /> realisieren.
           </S.SubtitleCta>
-          <S.ButtonCta href="/kontakt">Gespräch starten</S.ButtonCta>
+          <S.ButtonCta>Gespräch starten</S.ButtonCta>
         </S.WrapperCta>
       </S.Cta>
       <S.Footer>

@@ -373,7 +373,7 @@ export default {
     },
     advantages: {
       bg: {
-        src: "/imgs/privatkunden/advantages/bg.png",
+        src: "/imgs/privatkunden/benefits.png",
         alt: "Background",
       },
       title: <>Unsere Vorteile</>,

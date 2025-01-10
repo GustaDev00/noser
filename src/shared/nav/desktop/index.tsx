@@ -12,11 +12,13 @@ export default () => {
 
         <S.Nav>
           <S.List>
-            {C.categories.map((category) => (
-              <S.Item key={category.title} $active={pathname === category.href}>
-                <S.Link href={category.href}>{category.title}</S.Link>
-              </S.Item>
-            ))}
+            {C.categories
+              .filter((category) => category.title !== "Impressum")
+              .map((category) => (
+                <S.Item key={category.title} $active={pathname === category.href}>
+                  <S.Link href={category.href}>{category.title}</S.Link>
+                </S.Item>
+              ))}
           </S.List>
         </S.Nav>
 

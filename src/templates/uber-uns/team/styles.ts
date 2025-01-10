@@ -99,8 +99,22 @@ export const Card = styled.div<{ $active?: boolean }>`
   display: flex;
   align-items: flex-end;
   width: 100%;
-  height: 51.4rem;
+  height: 66.2rem;
   padding: 4.5rem 3.2rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(29, 78, 137, 0.35) 59.5%, #1d4e89 100%);
+    opacity: ${({ $active }) => ($active ? 1 : 0.7)};
+    border-radius: 0.8rem;
+    transition: opacity 0.6s ease;
+    z-index: 1;
+  }
 
   ${ContentCard} {
     max-height: ${({ $active }) => ($active ? "40rem" : "9rem")};
@@ -124,6 +138,7 @@ export const Img = styled.img`
 export const Article = styled.article`
   position: relative;
   width: 100%;
+  z-index: 2;
 
   &::before,
   &::after {
@@ -131,15 +146,15 @@ export const Article = styled.article`
     position: absolute;
     bottom: 0;
     right: 0;
-    background: rgb(157 157 157);
+    background: rgba(255, 255, 255, 0.35);
+    z-index: 2;
   }
 
   &::after {
-    bottom: -0.3rem;
-    width: 1rem;
-    height: 1rem;
+    bottom: -0.2rem;
+    width: 0.6rem;
+    height: 0.6rem;
     border-radius: 50%;
-    z-index: 2;
   }
 
   &::before {

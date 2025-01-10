@@ -38,9 +38,7 @@ export const ButtonSwipe = ({ href, className, onClick, children, ...props }: Bu
       className={className}
       {...(props as ButtonProps)}
       onClick={(e) => {
-        if (props.title === "Gespräch starten") {
-          handleClick(e);
-        }
+        handleClick(e);
       }}
     >
       {children} <ArrowIcon />
