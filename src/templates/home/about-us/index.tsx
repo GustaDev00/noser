@@ -14,11 +14,6 @@ export default () => (
         <S.Img src="/imgs/home/about-us/img.png" alt="Image" title="Image" />
 
         <S.Content>
-          <S.ImageSmall
-            src="/imgs/home/about-us/img-small.png"
-            alt="Image small"
-            title="Image small"
-          />
           <S.Text>
             Seit unserer Gründung haben wir nur ein Ziel: Ihre
             <CustomBr byViewport="desktop" /> finanziellen und administrativen Aufgaben so zu

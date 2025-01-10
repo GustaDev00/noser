@@ -54,13 +54,9 @@ export const Container = styled.div`
 
 export const Img = styled(LazyImage)`
   width: 100%;
-  height: 92.5rem;
+  height: 54.7rem;
   object-fit: cover;
   border-radius: 0.4rem;
-
-  ${mediaMaxWidth("isMobileOrTabletVertical")`
-    height: 80rem;
-  `}
 
   ${mediaMaxWidth("mobile")`
     height: 30.1rem;
@@ -78,25 +74,10 @@ export const Content = styled.article`
   `}
 `;
 
-export const ImageSmall = styled(LazyImage)`
-  width: 100%;
-  height: 35.7rem;
-  object-fit: cover;
-  border-radius: 0.4rem;
-
-  ${mediaMaxWidth("isMobileOrTabletVertical")`
-    height: 50rem;
-  `}
-
-  ${mediaMaxWidth("mobile")`
-    height: 26rem;
-  `}
-`;
-
 export const Text = styled.p`
   color: #292929;
   font-family: var(--manrope);
-  font-size: 2.6rem;
+  font-size: 2.4rem;
   font-weight: 300;
   line-height: 5.3rem;
   letter-spacing: -0.0003rem;

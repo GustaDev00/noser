@@ -21,7 +21,14 @@ export default {
     email: "info@nosertreuhand.ch",
     link: "mailto:info@nosertreuhand.ch",
   },
-  text: <>Korki 1, 8752 Näfels</>,
+  text: (
+    <>
+      Noser Treuhand GmbH
+      <br />
+      Korki 1<br />
+      8752 Näfels
+    </>
+  ),
   location: {
     text: "Location",
     address: "Lerchenstrasse 22, 8754 Netstal",
