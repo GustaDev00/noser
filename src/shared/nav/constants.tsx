@@ -1,5 +1,4 @@
 import C from "@/constants";
-import { text } from "stream/consumers";
 
 export default {
   contact: {
