@@ -38,7 +38,7 @@ export default {
     { title: "Home", href: "/" },
     { title: "Privatkunden", href: "/privatkunden" },
     { title: "Unternehmen", href: "/unternehmen" },
-    { title: "Link/Downloads", href: "/nutzliche-ressourcen" },
+    { title: "Links/Downloads", href: "/nutzliche-ressourcen" },
     { title: "Impressum", href: "/impressum" },
     { title: "Über uns", href: "/uber-uns" },
   ],

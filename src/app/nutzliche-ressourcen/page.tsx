@@ -3,8 +3,8 @@ import { type Metadata } from "next";
 import { type ReactNode } from "react";
 
 export const metadata: Metadata = {
-  title: "Link/Downloads",
-  description: "Link/Downloads",
+  title: "Links/Downloads",
+  description: "Links/Downloads",
 };
 
 const NutzlichRessourcen = (): ReactNode => {
