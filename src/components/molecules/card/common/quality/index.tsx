@@ -11,7 +11,9 @@ export default () => {
         <S.Title>{title}</S.Title>
       </S.Content>
       <S.Container>
-        <S.Img {...img} />
+        <S.Link href="https://www.treuhandsuisse.ch/" target="_blank">
+          <S.Img {...img} />
+        </S.Link>
       </S.Container>
     </S.Wrapper>
   );

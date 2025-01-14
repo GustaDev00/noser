@@ -39,6 +39,8 @@ export const Container = styled.div`
   border-radius: 1.7rem;
 `;
 
+export const Link = styled.a``;
+
 export const Img = styled(LazyImage)`
   width: 100%;
   height: 5.6rem;
