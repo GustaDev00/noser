@@ -30,7 +30,9 @@ export const Accounting: FC<AccountingProps> = ({ img, list, ...props }) => {
                     <S.SubTitle>{title}</S.SubTitle>
                     <S.Arrow />
                   </S.Article>
-                  <S.Text>{content}</S.Text>
+                  <S.Text>
+                    <p>{content}</p>
+                  </S.Text>
                 </S.Item>
               ))}
             </S.List>

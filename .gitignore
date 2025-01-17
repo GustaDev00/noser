@@ -7,6 +7,7 @@
 .yarn/install-state.gz
 package-lock.json
 yarn.lock
+*.zip
 
 # testing
 /coverage

@@ -116,8 +116,22 @@ export const Card = styled.div<{ $active?: boolean }>`
     z-index: 1;
   }
 
-  ${ContentCard} {
-    max-height: ${({ $active }) => ($active ? "40rem" : "9rem")};
+  &:first-child {
+    ${ContentCard} {
+      max-height: ${({ $active }) => ($active ? "40rem" : "16rem")};
+    }
+  }
+
+  &:nth-child(2) {
+    ${ContentCard} {
+      max-height: ${({ $active }) => ($active ? "40rem" : "13rem")};
+    }
+  }
+
+  &:last-child {
+    ${ContentCard} {
+      max-height: ${({ $active }) => ($active ? "40rem" : "13rem")};
+    }
   }
 
   ${Arrow} {

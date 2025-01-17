@@ -4,12 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "zip": "zip -r build.zip out",
     "atoms": "node ./script/folder.js atoms",
     "molecules": "node ./script/folder.js molecules",
     "organisms": "node ./script/folder.js organisms",
     "convert-medias": "node ./script/convert-to-webp.js",
     "sitemap": "node ./script/generate-sitemap.js",
     "build": "yarn sitemap && yarn convert-medias && next build",
+    "publish1": "yarn sitemap && yarn convert-medias && next build && yarn zip",
     "start": "next start",
     "export": "next export",
     "lint": "next lint"

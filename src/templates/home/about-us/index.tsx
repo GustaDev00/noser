@@ -17,14 +17,16 @@ export default () => (
           <S.Text>
             Seit unserer Gründung haben wir nur ein Ziel: Ihre
             <CustomBr byViewport="desktop" /> finanziellen und administrativen Aufgaben so zu
-            <br /> gestalten, dass Sie sich auf das konzentrieren können,
+            <CustomBr byViewport="desktop" /> gestalten, dass Sie sich auf das konzentrieren können,
             <CustomBr byViewport="desktop" /> was Sie am besten können.
           </S.Text>
 
           <S.Text>
             Wir glauben, dass Finanzen und Steuern keine
-            <br /> Geheimwissenschaften sein sollten – unsere Philosophie ist
-            <br /> Transparenz. Klarheit in jeder Frage und eine unkomplizierte
+            <CustomBr byViewport="desktop" /> Geheimwissenschaften sein sollten – unsere Philosophie
+            ist
+            <CustomBr byViewport="desktop" /> Transparenz. Klarheit in jeder Frage und eine
+            unkomplizierte
             <CustomBr byViewport="desktop" /> Beratung, die Sie wirklich entlastet.
           </S.Text>
         </S.Content>

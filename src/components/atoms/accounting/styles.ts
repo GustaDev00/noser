@@ -109,13 +109,19 @@ export const Arrow = styled(ArrowIcon)`
 `;
 
 export const Text = styled.div`
-  margin-top: 3.2rem;
   color: #292929;
   font-family: var(--manrope);
   font-size: 2.2rem;
   font-weight: 300;
   line-height: 4.6rem;
   letter-spacing: -0.0002rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+
+  p {
+    margin-top: 3.2rem;
+  }
 
   ${mediaMaxWidth("mobile")`
     font-size: 1.6rem;
@@ -130,13 +136,11 @@ export const Item = styled.li<{ $active?: boolean }>`
   padding: 3.2rem 0;
   border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  max-height: 12rem;
   transition: max-height 0.4s ease;
 
   &:first-child {
     border-top: none;
     padding-top: 0;
-    max-height: 8.2rem;
   }
 
   &:last-child {
@@ -148,25 +152,17 @@ export const Item = styled.li<{ $active?: boolean }>`
     css`
       max-height: 100rem;
 
+      ${Text} {
+        max-height: 100rem;
+      }
+
       ${Arrow} {
         transform: rotate(45deg);
-      }
-      &:first-child {
-        max-height: 100rem;
       }
     `}
 
   ${({ $active }) => mediaMaxWidth("mobile")`
     padding: 2.7rem 0;
-    max-height: ${$active ? "100rem" : "8rem"};
-
-    &:first-child {
-      max-height: ${$active ? "100rem" : "6rem"};
-    }
-
-    &:last-child {
-      max-height: ${$active ? "100rem" : "12rem"};
-    }
   `}
 `;
 

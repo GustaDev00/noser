@@ -72,15 +72,15 @@ export default {
         title: "Firmengründung",
         content: (
           <>
-            Ihre Gehälter und Sozialabgaben – korrekt, pünktlich und ohne Ihr Zutun. Während andere
-            sich mit endlosen Berechnungen und Verwaltungsdetails quälen, haben Sie den Rücken frei.
-            Jede Abrechnung läuft so, wie sie laufen soll: nahtlos und 100% korrekt.
+            Vom ersten Papierkram bis zur Eintragung sorgen wir für einen reibungslosen Start, der
+            Ihnen die Freiheit lässt, sich auf Ihre Vision zu konzentrieren. Stellen Sie sich eine
+            Gründung vor, die einfach läuft, mit jeder Formalität abgehakt, während Sie schon an
+            morgen denken.
             <br />
             <br />
-            Stellen Sie sich vor, Sie nutzen Ihre Zeit, um wirklich voranzukommen, ohne die kleinste
-            Sorge um Lohnfragen. Mit Noser Treuhand als Ihrem verlässlichen Rückhalt bleibt kein
-            Detail ungeklärt. Wir garantieren Ihnen absolute Diskretion und Sorgfalt, sodass Sie
-            sich auf das Wichtige konzentrieren können – und das jeden Monat, aufs Neue.
+            Unsere Begleitung heisst: weniger Bürokratie, mehr Erfolgschancen. Wir geben Ihrem Start
+            nicht nur Sicherheit, sondern die Stabilität, um mit vollem Fokus durchzustarten und
+            Ihre Ideen wahrzumachen – nachhaltig, verlässlich und bereit für die Zukunft.
           </>
         ),
       },
@@ -88,15 +88,16 @@ export default {
         title: "Treuhandmandate",
         content: (
           <>
-            Ihre Gehälter und Sozialabgaben – korrekt, pünktlich und ohne Ihr Zutun. Während andere
-            sich mit endlosen Berechnungen und Verwaltungsdetails quälen, haben Sie den Rücken frei.
-            Jede Abrechnung läuft so, wie sie laufen soll: nahtlos und 100% korrekt.
+            Management mit Weitsicht: Wir führen Ihre Treuhandgesellschaft und schützen Ihre
+            Interessen, während Sie das Wachstum Ihres Unternehmens vorantreiben. Mit uns als
+            Rückhalt führen Sie Ihre Treuhandgesellschaften ohne Ablenkungen, während wir jeden
+            Vorgang nahtlos und 100% professionell abwickeln.
             <br />
             <br />
-            Stellen Sie sich vor, Sie nutzen Ihre Zeit, um wirklich voranzukommen, ohne die kleinste
-            Sorge um Lohnfragen. Mit Noser Treuhand als Ihrem verlässlichen Rückhalt bleibt kein
-            Detail ungeklärt. Wir garantieren Ihnen absolute Diskretion und Sorgfalt, sodass Sie
-            sich auf das Wichtige konzentrieren können – und das jeden Monat, aufs Neue.
+            Unsere Arbeit sorgt dafür, dass keine Einzelheit übersehen wird und Sie alle Freiheiten
+            haben, sich ganz auf Ihr Wachstum und Ihre Ziele zu konzentrieren. Wir geben Ihnen die
+            Sicherheit, die zählt – weil wir verstehen, dass hinter jedem Detail grosse Chancen und
+            Risiken stehen.
           </>
         ),
       },

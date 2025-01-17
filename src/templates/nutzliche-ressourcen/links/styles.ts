@@ -29,7 +29,7 @@ export const ContentLinks = styled.div`
     margin-top: 6rem;
 
     ${mediaMaxWidth("mobile")`
-      margin-top: 0;
+      margin: 0 auto;
     `}
   }
 `;
