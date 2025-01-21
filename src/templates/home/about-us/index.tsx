@@ -15,19 +15,15 @@ export default () => (
 
         <S.Content>
           <S.Text>
-            Seit unserer Gründung haben wir nur ein Ziel: Ihre
-            <CustomBr byViewport="desktop" /> finanziellen und administrativen Aufgaben so zu
-            <CustomBr byViewport="desktop" /> gestalten, dass Sie sich auf das konzentrieren können,
-            <CustomBr byViewport="desktop" /> was Sie am besten können.
+            Seit unserer Gründung haben wir nur ein Ziel: Ihre finanziellen und administrativen
+            Aufgaben so zu gestalten, dass Sie sich auf das konzentrieren können, was Sie am besten
+            können.
           </S.Text>
 
           <S.Text>
-            Wir glauben, dass Finanzen und Steuern keine
-            <CustomBr byViewport="desktop" /> Geheimwissenschaften sein sollten – unsere Philosophie
-            ist
-            <CustomBr byViewport="desktop" /> Transparenz. Klarheit in jeder Frage und eine
-            unkomplizierte
-            <CustomBr byViewport="desktop" /> Beratung, die Sie wirklich entlastet.
+            Wir glauben, dass Finanzen und Steuern keine Geheimwissenschaften sein sollten – unsere
+            Philosophie ist Transparenz. Klarheit in jeder Frage und eine unkomplizierte Beratung,
+            die Sie wirklich entlastet.
           </S.Text>
         </S.Content>
       </S.Container>

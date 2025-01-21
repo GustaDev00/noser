@@ -64,13 +64,13 @@ export const Img = styled(LazyImage)`
 `;
 
 export const Content = styled.article`
+  width: 50%;
   display: flex;
   flex-direction: column;
-  gap: 7.2rem;
+  gap: 1.8rem;
 
   ${mediaMaxWidth("isMobileOrTabletVertical")`
     width: 100%;
-    gap: 2.8rem;
   `}
 `;
 

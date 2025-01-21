@@ -118,19 +118,19 @@ export const Card = styled.div<{ $active?: boolean }>`
 
   &:first-child {
     ${ContentCard} {
-      max-height: ${({ $active }) => ($active ? "40rem" : "16rem")};
+      max-height: ${({ $active }) => ($active ? "40rem" : "12.8rem")};
     }
   }
 
   &:nth-child(2) {
     ${ContentCard} {
-      max-height: ${({ $active }) => ($active ? "40rem" : "13rem")};
+      max-height: ${({ $active }) => ($active ? "40rem" : "12.8rem")};
     }
   }
 
   &:last-child {
     ${ContentCard} {
-      max-height: ${({ $active }) => ($active ? "40rem" : "13rem")};
+      max-height: ${({ $active }) => ($active ? "40rem" : "12.8rem")};
     }
   }
 

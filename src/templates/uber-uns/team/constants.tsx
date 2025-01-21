@@ -17,9 +17,8 @@ export default {
       name: "Cédric Noser",
       text: (
         <>
-          Geschäftsführung, Dipl. Treuhand-Experte
-          <CustomBr byViewport="desktop" /> FL NDS Bringt Klarheit und Weitblick in Ihre
-          <CustomBr byViewport="desktop" /> Finanzen.
+          Geschäftsführung, Dipl.
+          <br /> Treuhand-Experte FL NDS Bringt Klarheit und Weitblick in Ihre Finanzen.
         </>
       ),
     },
