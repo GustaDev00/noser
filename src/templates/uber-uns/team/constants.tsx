@@ -17,8 +17,8 @@ export default {
       name: "Cédric Noser",
       text: (
         <>
-          Geschäftsführung, Dipl.
-          <br /> Treuhand-Experte FL NDS Bringt Klarheit und Weitblick in Ihre Finanzen.
+          Geschäftsführer
+          <br /> Dipl. Treuhand-Expert FL NDS Bringt Klarheit und Weitblick in Ihre Finanzen.
         </>
       ),
     },
@@ -30,8 +30,8 @@ export default {
       name: "Dominic Noser",
       text: (
         <>
-          Sachbearbeiter Strukturiert und engagiert
-          <CustomBr byViewport="desktop" /> für einen reibungslosen Ablauf.
+          Sachbearbeiter
+          <br /> Strukturiert und engagiert für einen reibungslosen Ablauf.
         </>
       ),
     },
@@ -43,8 +43,8 @@ export default {
       name: "Ursula Noser",
       text: (
         <>
-          Sachbearbeiterin Aufmerksam und
-          <CustomBr byViewport="desktop" /> zuverlässig für Ihre Anliegen da.
+          Sachbearbeiterin
+          <br /> Aufmerksam und zuverlässig für Ihre Anliegen da.
         </>
       ),
     },
