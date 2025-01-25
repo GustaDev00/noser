@@ -62,6 +62,7 @@ export const Line = styled.div`
 export const Container = styled.div`
   display: flex;
   gap: 4rem;
+  align-items: flex-start;
 
   ${mediaMaxWidth("mobile")`
     flex-direction: column;
@@ -72,7 +73,7 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
-  padding: 4.8rem 5.2rem 1rem;
+  padding: 4.8rem 5.2rem;
   border-radius: 1.2rem;
   background: #fff;
 
