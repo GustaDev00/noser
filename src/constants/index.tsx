@@ -309,20 +309,6 @@ export default {
     accounting: {
       list: [
         {
-          title: "Buchhaltung",
-          content: (
-            <>
-              Mit präziser und durchdachter Buchhaltung legen wir die Grundlage für Ihre klaren
-              Entscheidungen. Von der täglichen Finanzübersicht bis zum umfassenden Jahresabschluss
-              – wir sorgen dafür, dass jede Zahl in Ihrem Unternehmen stimmt. Unser Ziel ist es,
-              Ihre Buchhaltung als strategischen Vorteil zu gestalten, der Transparenz und
-              Gelassenheit schafft. Durch die Kombination aus digitalem Know-how und menschlicher
-              Expertise machen wir Finanzprozesse klar und leicht nachvollziehbar, sodass Sie mit
-              Ruhe und Fokus auf das Wachstum Ihres Unternehmens blicken können.
-            </>
-          ),
-        },
-        {
           title: "Steuerberatung",
           content: (
             <>

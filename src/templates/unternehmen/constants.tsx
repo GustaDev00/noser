@@ -84,23 +84,6 @@ export default {
           </>
         ),
       },
-      {
-        title: "Treuhandmandate",
-        content: (
-          <>
-            Management mit Weitsicht: Wir führen Ihre Treuhandgesellschaft und schützen Ihre
-            Interessen, während Sie das Wachstum Ihres Unternehmens vorantreiben. Mit uns als
-            Rückhalt führen Sie Ihre Treuhandgesellschaften ohne Ablenkungen, während wir jeden
-            Vorgang nahtlos und 100% professionell abwickeln.
-            <br />
-            <br />
-            Unsere Arbeit sorgt dafür, dass keine Einzelheit übersehen wird und Sie alle Freiheiten
-            haben, sich ganz auf Ihr Wachstum und Ihre Ziele zu konzentrieren. Wir geben Ihnen die
-            Sicherheit, die zählt – weil wir verstehen, dass hinter jedem Detail grosse Chancen und
-            Risiken stehen.
-          </>
-        ),
-      },
     ],
     img: {
       src: "/imgs/unternehmen/accounting.png",
